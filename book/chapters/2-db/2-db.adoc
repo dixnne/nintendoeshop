@@ -94,12 +94,24 @@ Project Nintendo_eShop {
 
 // Tablas
 
+enum substat {
+  active
+  inactive
+  expired
+}
+
+enum stat {
+  pending
+  completed
+  expired
+}
+
 Table Users {
   user_id int [pk, increment] // Identificador único del usuario
   username varchar [unique] // Nombre de usuario
   email varchar [unique] // Dirección de correo electrónico
   password varchar // Hash de la contraseña del usuario
-  subscription_status enum('active', 'inactive', 'expired') // Estado de la suscripción
+  subscription_status substat 
   created_at timestamp // Fecha de creación del perfil
   last_login timestamp // Último inicio de sesión
   country varchar // País del usuario
@@ -127,7 +139,7 @@ Table Transactions {
   user_id int  // Referencia al usuario que realizó la compra
   total_amount decimal // Monto total de la transacción
   payment_method varchar // Método de pago utilizado
-  status enum('pending', 'completed', 'failed') // Estado de la transacción
+  status stat
   transaction_date timestamp // Fecha y hora de la transacción
 }
 
@@ -144,7 +156,7 @@ Table Subscriptions {
   subscription_type varchar // Tipo de suscripción
   start_date date // Fecha de inicio de la suscripción
   end_date date // Fecha de finalización de la suscripción
-  status enum('active', 'expired', 'cancelled') // Estado de la suscripción
+  status substat
 }
 
 Table Reviews {
@@ -184,3 +196,86 @@ Para una plataforma de la magnitud de la Nintendo eShop, un sistema de base de d
 * **PostgreSQL**: Ofrece características avanzadas como particionamiento nativo y soporte para JSON, lo que puede ser útil si es necesario almacenar datos semiestructurados. PostgreSQL es también altamente escalable y tiene una gran comunidad de soporte.
 * **MySQL**: Es una opción ampliamente utilizada en Ecommerce, conocida por su velocidad en lecturas y su robustez. Con la configuración adecuada, MySQL puede manejar grandes volúmenes de datos.
 * **Base de datos distribuida (Cassandra, CockroachDB)**: Si la necesidad de escalabilidad es extrema, una base de datos distribuida como Cassandra o CockroachDB puede manejar grandes volúmenes de datos replicados globalmente, pero requiere un mayor esfuerzo de mantenimiento y configuración.
+
+### Selección de Base de Datos para la Nintendo eShop
+
+El proyecto de la Nintendo eShop requiere una base de datos que pueda manejar un volumen elevado de transacciones (hasta **10 millones de transacciones diarias**), proporcionar **alta disponibilidad**, **escalabilidad**, y **seguridad** para los datos financieros y personales de los usuarios. Además, debe soportar características como **transacciones rápidas**, **consultas eficientes**, y **consistencia** en tiempo real. A continuación, se analizan varias opciones de bases de datos y se recomienda la más adecuada para este proyecto.
+
+#### **Opciones consideradas**:
+1. **MySQL / MariaDB (Relacional)**
+2. **PostgreSQL (Relacional)**
+3. **MongoDB (NoSQL)**
+4. **Cassandra (NoSQL Distribuido)**
+5. **DynamoDB (NoSQL administrado en la nube)**
+
+### **1. MySQL / MariaDB (Relacional)**
+
+**Ventajas**:
+- **Popularidad y estabilidad**: MySQL es ampliamente utilizado en plataformas de Ecommerce, con una estructura relacional que permite transacciones ACID (Atomicidad, Consistencia, Aislamiento, Durabilidad).
+- **Transacciones y consultas complejas**: Ideal para manejar datos altamente estructurados como productos, usuarios y pedidos, ofreciendo integridad referencial mediante **joins**, índices y claves foráneas.
+- **Soporte para replicación y sharding**: MySQL permite replicación maestro-esclavo y particionado de tablas (sharding), lo que puede aumentar la escalabilidad y disponibilidad.
+
+**Desventajas**:
+- **Escalabilidad limitada**: A pesar de soportar sharding, MySQL puede tener limitaciones de escalabilidad para cargas extremadamente altas si no se gestiona adecuadamente.
+- **Desempeño bajo en grandes volúmenes**: Para lecturas y escrituras masivas, el rendimiento puede degradarse, especialmente en situaciones donde el tráfico es masivo y las consultas son complejas.
+
+**Uso recomendado**: MySQL o MariaDB es adecuado si se prioriza una solución relacional tradicional, con integridad referencial y transacciones complejas, pero puede no ser la mejor opción para manejar el volumen masivo que se espera para este proyecto sin configuraciones avanzadas de escalabilidad.
+
+### **2. PostgreSQL (Relacional)**
+
+**Ventajas**:
+- **Escalabilidad avanzada**: PostgreSQL es una base de datos relacional avanzada con mejor soporte para características de escalabilidad en comparación con MySQL, como **particionado nativo** y **replicación lógica**.
+- **Consultas complejas y JSON**: Además de ser relacional, PostgreSQL permite almacenar y consultar datos **NoSQL** mediante **JSONB**, lo que lo convierte en una opción híbrida.
+- **Transacciones ACID y alta confiabilidad**: Como MySQL, PostgreSQL soporta transacciones ACID, pero ofrece un mejor rendimiento en situaciones de consultas complejas y manipulación de datos.
+
+**Desventajas**:
+- **Complejidad**: Aunque es más robusto que MySQL en cuanto a características avanzadas, la gestión de PostgreSQL puede ser más compleja y requiere un equipo más experimentado para gestionar su escalabilidad en grandes volúmenes.
+
+**Uso recomendado**: PostgreSQL es una opción ideal si se necesitan transacciones complejas, escalabilidad moderada, y la flexibilidad para manejar datos semiestructurados (JSON). Es una buena opción si se espera una combinación de datos estructurados y no estructurados.
+
+### **3. MongoDB (NoSQL)**
+
+**Ventajas**:
+- **Escalabilidad horizontal**: MongoDB está diseñado para escalar horizontalmente mediante **sharding**. Esto es ideal para sistemas distribuidos que manejan grandes cantidades de lecturas y escrituras.
+- **Flexibilidad**: Como base de datos **NoSQL**, MongoDB permite almacenar datos semiestructurados, lo que proporciona flexibilidad para manejar diferentes tipos de datos, como productos con atributos variables.
+- **Alta disponibilidad**: MongoDB soporta replicación automática, lo que facilita la creación de clusters altamente disponibles y escalables.
+
+**Desventajas**:
+- **Falta de soporte ACID total**: Aunque MongoDB ha mejorado su soporte para transacciones multi-documento, sigue siendo menos robusto que las bases de datos relacionales en cuanto a transacciones complejas y consistencia estricta.
+- **Consultas complejas**: MongoDB no está optimizado para consultas relacionales complejas, lo que puede ser un inconveniente en escenarios donde se necesita hacer muchas operaciones relacionadas entre distintas colecciones.
+
+**Uso recomendado**: MongoDB es ideal si el proyecto necesita **gran flexibilidad** y debe manejar grandes volúmenes de datos semiestructurados con una alta escalabilidad, pero no es tan recomendable si las transacciones ACID son una prioridad.
+
+### **4. Cassandra (NoSQL Distribuido)**
+
+**Ventajas**:
+- **Escalabilidad masiva**: Cassandra es una base de datos **NoSQL distribuida** diseñada para escalar fácilmente de manera horizontal en múltiples nodos. Es ideal para manejar cantidades masivas de lecturas y escrituras.
+- **Alta disponibilidad**: Ofrece un modelo de replicación que asegura alta disponibilidad, incluso en casos de fallos de nodos. Es adecuada para aplicaciones distribuidas globalmente.
+- **Modelo de consistencia ajustable**: Cassandra permite configurar el nivel de consistencia para lecturas y escrituras, lo que permite optimizar el sistema según las necesidades de latencia y disponibilidad.
+
+**Desventajas**:
+- **Falta de soporte ACID**: Cassandra no soporta transacciones ACID en su totalidad, por lo que no es ideal para aplicaciones que requieren consistencia estricta en todas las operaciones.
+- **Modelo de datos limitado**: Es más adecuado para sistemas que requieren almacenamiento de datos simples y acceso rápido a través de claves primarias. No es adecuado para datos con relaciones complejas.
+
+**Uso recomendado**: Cassandra es la mejor opción si se espera un **volumen masivo de datos** con alta disponibilidad y escalabilidad global, pero **sin** necesidad de transacciones complejas o relaciones entre los datos.
+
+### **5. DynamoDB (NoSQL Administrado en la Nube)**
+
+**Ventajas**:
+- **Escalabilidad automática**: DynamoDB, como servicio administrado de AWS, está diseñado para escalar automáticamente según el tráfico, lo que lo hace ideal para cargas variables y grandes volúmenes de transacciones.
+- **Alto rendimiento**: DynamoDB es capaz de manejar millones de solicitudes por segundo, lo que lo convierte en una excelente opción para sistemas de Ecommerce de gran escala.
+- **Modelo de facturación por uso**: Su modelo de pago por consumo lo hace atractivo, ya que se paga en función de las lecturas y escrituras realizadas, optimizando costos.
+- **Gestión simplificada**: Como es un servicio totalmente administrado por AWS, no se necesita gestionar la infraestructura de la base de datos, lo que reduce la complejidad operativa.
+
+**Desventajas**:
+- **Limitaciones de consultas complejas**: DynamoDB no está diseñado para manejar consultas relacionales complejas ni transacciones ACID a gran escala (aunque admite transacciones en ciertos casos).
+- **Costo a largo plazo**: Dependiendo del tráfico, el costo puede aumentar significativamente, especialmente en momentos de picos masivos.
+
+**DynamoDB es la mejor opción si se requiere una base de datos NoSQL completamente administrada, con escalabilidad automática y alto rendimiento** para un sistema de Ecommerce que maneje millones de transacciones diarias. Es ideal para plataformas como la Nintendo eShop que requieren alta disponibilidad y rapidez en las transacciones.
+
+La combinación de **DynamoDB** para datos de alto volumen y consultas rápidas, con **PostgreSQL** para datos estructurados y transacciones críticas, es la mejor opción para la Nintendo eShop:
+
+1. **DynamoDB**: Manejará las transacciones relacionadas con productos, usuarios, inventarios y todas las lecturas y escrituras de alto volumen. Es escalable, completamente administrado, y capaz de manejar el tráfico masivo esperado.
+2. **PostgreSQL**: Se utilizará para manejar las transacciones críticas y las operaciones que requieren **ACID** y consistencia fuerte, como los pagos y registros de facturación.
+
+Esta combinación ofrece la flexibilidad y escalabilidad de **NoSQL**, junto con la consistencia y transacciones seguras de una base de datos **relacional**, optimizando el rendimiento y la seguridad del proyecto.

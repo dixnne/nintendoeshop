@@ -63,7 +63,7 @@ El sistema **Nintendo eShop** no es un servicio de distribución física de vide
 === Diagramas de Arquitectura
 
 ==== Diagrama de Contexto
-.C4
+
 [plantuml]
 ----
 @startuml
@@ -82,7 +82,7 @@ Rel(user, nintendoShop, "Usa")
 ----
 
 ==== Diagrama de Contenedor
-.C4
+
 [plantuml]
 ----
 @startuml
@@ -107,7 +107,7 @@ Rel(backend, paymentService, "Envía información de pago")
 ----
 
 ==== Diagrama de Componente (Backend API)
-.C4
+
 [plantuml]
 ----
 @startuml
@@ -143,6 +143,7 @@ El entorno incluye la ejecución de aplicaciones de frontend y backend, almacena
 ==== Problema
 
 El desafío es seleccionar un proveedor de servidor y una arquitectura que:
+
 * **Escale fácilmente** para manejar grandes volúmenes de usuarios y transacciones.
 * Ofrezca **alta disponibilidad** y recuperación rápida ante fallos.
 * Sea capaz de soportar tanto la **infraestructura backend** como el **frontend**.
@@ -254,7 +255,7 @@ Azure es otra plataforma en la nube confiable, especialmente para empresas que y
 
 * **Conclusión**: Azure es ideal si ya estás utilizando o planeas utilizar otros servicios de Microsoft, y si deseas flexibilidad en la integración con sistemas on*premise. Es una opción sólida para el Ecommerce a gran escala.
 
-=== Opciones de Infraestructura On*premise
+=== Opciones de Infraestructura On-premise
 Aunque el uso de soluciones en la nube es el enfoque más común hoy en día, también es posible considerar servidores on*premise (propios o alquilados) si se requiere un control total sobre la infraestructura.
 
 * **Ventajas**:
@@ -269,7 +270,7 @@ Aunque el uso de soluciones en la nube es el enfoque más común hoy en día, ta
 
 * **Conclusión**: Los servidores on*premise solo son recomendables si se necesita un control extremo sobre la infraestructura o si la empresa ya tiene una infraestructura física sólida. No es la opción más flexible ni escalable para un Ecommerce que espera grandes volúmenes de transacciones.
 
-=== Soluciones Híbridas (Multi*cloud)
+=== Soluciones Híbridas (Multi-cloud)
 Una tendencia creciente es utilizar una estrategia **multi*cloud** o **híbrida**, combinando varios proveedores de nube o una mezcla de infraestructura on*premise con servicios en la nube.
 
 * **Ventajas**:

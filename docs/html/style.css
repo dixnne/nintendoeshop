@@ -7,13 +7,13 @@
 /* CUSTOMISATIONS */
 /* Change the values in root for quick customisation. If you want even more fine grain... venture further. */
 :root{
---maincolor:#282c34;
---primarycolor:#f39c12;
---secondarycolor:#03a9f4;
---tertiarycolor:#4db6ac;
---sidebarbackground:#21252b;
---linkcolor:#f44336;
---linkcoloralternate:#ff9800;
+--maincolor:#304463;
+--primarycolor:#7D8ABC;
+--secondarycolor:#FFC7ED;
+--tertiarycolor:#ffdbfb;
+--sidebarbackground:#21334d;
+--linkcolor:#7D8ABC;
+--linkcoloralternate:#FFC7ED;
 --white:#FFFFFF;
 }
 

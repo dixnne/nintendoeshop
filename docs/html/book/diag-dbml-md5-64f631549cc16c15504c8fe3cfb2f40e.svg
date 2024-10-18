@@ -1,0 +1,354 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd"><svg height='2534pt' preserveAspectRatio='xMidYMid meet' viewBox='0.00 0.00 1941.11 2534.48' width='1941pt' xmlns:xlink='http://www.w3.org/1999/xlink' xmlns='http://www.w3.org/2000/svg'>
+<g class='graph' id='graph0' transform='scale(1 1) rotate(0) translate(4 2530.48)'>
+<title>dbml</title>
+
+<g class='node' id='substat'>
+<title>substat</title>
+<ellipse cx='1626.93' cy='-1882.67' fill='none' rx='178.8' ry='172.57' stroke='black' stroke-width='0'/>
+<polygon fill='#29235c' points='1502.93,-1942.67 1502.93,-2002.67 1751.93,-2002.67 1751.93,-1942.67 1502.93,-1942.67' stroke='transparent'/>
+<polygon fill='none' points='1502.93,-1942.67 1502.93,-2002.67 1751.93,-2002.67 1751.93,-1942.67 1502.93,-1942.67' stroke='#29235c'/>
+<text fill='#ffffff' font-family='Helvetica,sans-Serif' font-size='32.00' font-weight='bold' text-anchor='start' x='1513.6' y='-1963.87'> &#160;&#160;&#160;&#160;&#160;&#160;substat &#160;&#160;&#160;&#160;&#160;&#160;</text>
+<polygon fill='#e7e2dd' points='1502.93,-1882.67 1502.93,-1942.67 1751.93,-1942.67 1751.93,-1882.67 1502.93,-1882.67' stroke='transparent'/>
+<polygon fill='none' points='1502.93,-1882.67 1502.93,-1942.67 1751.93,-1942.67 1751.93,-1882.67 1502.93,-1882.67' stroke='#29235c'/>
+<text fill='#1d71b8' font-family='Helvetica,sans-Serif' font-size='32.00' font-style='italic' text-anchor='start' x='1550.07' y='-1903.87'> &#160;&#160;&#160;active &#160;&#160;&#160;</text>
+<polygon fill='#e7e2dd' points='1502.93,-1822.67 1502.93,-1882.67 1751.93,-1882.67 1751.93,-1822.67 1502.93,-1822.67' stroke='transparent'/>
+<polygon fill='none' points='1502.93,-1822.67 1502.93,-1882.67 1751.93,-1882.67 1751.93,-1822.67 1502.93,-1822.67' stroke='#29235c'/>
+<text fill='#1d71b8' font-family='Helvetica,sans-Serif' font-size='32.00' font-style='italic' text-anchor='start' x='1537.63' y='-1843.87'> &#160;&#160;&#160;inactive &#160;&#160;&#160;</text>
+<polygon fill='#e7e2dd' points='1502.93,-1762.67 1502.93,-1822.67 1751.93,-1822.67 1751.93,-1762.67 1502.93,-1762.67' stroke='transparent'/>
+<polygon fill='none' points='1502.93,-1762.67 1502.93,-1822.67 1751.93,-1822.67 1751.93,-1762.67 1502.93,-1762.67' stroke='#29235c'/>
+<text fill='#1d71b8' font-family='Helvetica,sans-Serif' font-size='32.00' font-style='italic' text-anchor='start' x='1539.4' y='-1783.87'> &#160;&#160;&#160;expired &#160;&#160;&#160;</text>
+<polygon fill='none' points='1501.43,-1761.67 1501.43,-2003.67 1752.43,-2003.67 1752.43,-1761.67 1501.43,-1761.67' stroke='#29235c' stroke-width='2'/>
+</g>
+
+<g class='node' id='stat'>
+<title>stat</title>
+<ellipse cx='1626.93' cy='-1360.67' fill='none' rx='172.57' ry='172.57' stroke='black' stroke-width='0'/>
+<polygon fill='#29235c' points='1506.93,-1420.67 1506.93,-1480.67 1746.93,-1480.67 1746.93,-1420.67 1506.93,-1420.67' stroke='transparent'/>
+<polygon fill='none' points='1506.93,-1420.67 1506.93,-1480.67 1746.93,-1480.67 1746.93,-1420.67 1506.93,-1420.67' stroke='#29235c'/>
+<text fill='#ffffff' font-family='Helvetica,sans-Serif' font-size='32.00' font-weight='bold' text-anchor='start' x='1538.89' y='-1441.87'> &#160;&#160;&#160;&#160;&#160;&#160;stat &#160;&#160;&#160;&#160;&#160;&#160;</text>
+<polygon fill='#e7e2dd' points='1506.93,-1360.67 1506.93,-1420.67 1746.93,-1420.67 1746.93,-1360.67 1506.93,-1360.67' stroke='transparent'/>
+<polygon fill='none' points='1506.93,-1360.67 1506.93,-1420.67 1746.93,-1420.67 1746.93,-1360.67 1506.93,-1360.67' stroke='#29235c'/>
+<text fill='#1d71b8' font-family='Helvetica,sans-Serif' font-size='32.00' font-style='italic' text-anchor='start' x='1534.44' y='-1381.87'> &#160;&#160;&#160;pending &#160;&#160;&#160;</text>
+<polygon fill='#e7e2dd' points='1506.93,-1300.67 1506.93,-1360.67 1746.93,-1360.67 1746.93,-1300.67 1506.93,-1300.67' stroke='transparent'/>
+<polygon fill='none' points='1506.93,-1300.67 1506.93,-1360.67 1746.93,-1360.67 1746.93,-1300.67 1506.93,-1300.67' stroke='#29235c'/>
+<text fill='#1d71b8' font-family='Helvetica,sans-Serif' font-size='32.00' font-style='italic' text-anchor='start' x='1517.56' y='-1321.87'> &#160;&#160;&#160;completed &#160;&#160;&#160;</text>
+<polygon fill='#e7e2dd' points='1506.93,-1240.67 1506.93,-1300.67 1746.93,-1300.67 1746.93,-1240.67 1506.93,-1240.67' stroke='transparent'/>
+<polygon fill='none' points='1506.93,-1240.67 1506.93,-1300.67 1746.93,-1300.67 1746.93,-1240.67 1506.93,-1240.67' stroke='#29235c'/>
+<text fill='#1d71b8' font-family='Helvetica,sans-Serif' font-size='32.00' font-style='italic' text-anchor='start' x='1538.9' y='-1261.87'> &#160;&#160;&#160;expired &#160;&#160;&#160;</text>
+<polygon fill='none' points='1505.93,-1239.67 1505.93,-1481.67 1747.93,-1481.67 1747.93,-1239.67 1505.93,-1239.67' stroke='#29235c' stroke-width='2'/>
+</g>
+
+<g class='node' id='Users'>
+<title>Users</title>
+<ellipse cx='309.71' cy='-1510.67' fill='none' rx='309.93' ry='384.83' stroke='black' stroke-width='0'/>
+<polygon fill='#1d71b8' points='92.71,-1720.67 92.71,-1780.67 526.71,-1780.67 526.71,-1720.67 92.71,-1720.67' stroke='transparent'/>
+<polygon fill='none' points='92.71,-1720.67 92.71,-1780.67 526.71,-1780.67 526.71,-1720.67 92.71,-1720.67' stroke='#29235c'/>
+<text fill='#ffffff' font-family='Helvetica,sans-Serif' font-size='32.00' font-weight='bold' text-anchor='start' x='205.69' y='-1741.87'> &#160;&#160;&#160;&#160;&#160;&#160;Users &#160;&#160;&#160;&#160;&#160;&#160;</text>
+<polygon fill='#e7e2dd' points='92.71,-1660.67 92.71,-1720.67 526.71,-1720.67 526.71,-1660.67 92.71,-1660.67' stroke='transparent'/>
+<polygon fill='none' points='92.71,-1660.67 92.71,-1720.67 526.71,-1720.67 526.71,-1660.67 92.71,-1660.67' stroke='#29235c'/>
+<text fill='#29235c' font-family='Helvetica,sans-Serif' font-size='32.00' font-weight='bold' text-anchor='start' x='103.71' y='-1681.87'>user_id</text>
+<text fill='#29235c' font-family='Helvetica,sans-Serif' font-size='32.00' text-anchor='start' x='208.62' y='-1681.87'> &#160;&#160;&#160;</text>
+<text fill='#29235c' font-family='Helvetica,sans-Serif' font-size='32.00' font-style='italic' text-anchor='start' x='481.93' y='-1681.87'>int</text>
+<polygon fill='#e7e2dd' points='92.71,-1600.67 92.71,-1660.67 526.71,-1660.67 526.71,-1600.67 92.71,-1600.67' stroke='transparent'/>
+<polygon fill='none' points='92.71,-1600.67 92.71,-1660.67 526.71,-1660.67 526.71,-1600.67 92.71,-1600.67' stroke='#29235c'/>
+<text fill='#29235c' font-family='Helvetica,sans-Serif' font-size='32.00' text-anchor='start' x='103.71' y='-1620.87'>username &#160;&#160;&#160;</text>
+<text fill='#29235c' font-family='Helvetica,sans-Serif' font-size='32.00' font-style='italic' text-anchor='start' x='409.04' y='-1621.87'>varchar</text>
+<polygon fill='#e7e2dd' points='92.71,-1540.67 92.71,-1600.67 526.71,-1600.67 526.71,-1540.67 92.71,-1540.67' stroke='transparent'/>
+<polygon fill='none' points='92.71,-1540.67 92.71,-1600.67 526.71,-1600.67 526.71,-1540.67 92.71,-1540.67' stroke='#29235c'/>
+<text fill='#29235c' font-family='Helvetica,sans-Serif' font-size='32.00' text-anchor='start' x='103.71' y='-1560.87'>email &#160;&#160;&#160;</text>
+<text fill='#29235c' font-family='Helvetica,sans-Serif' font-size='32.00' font-style='italic' text-anchor='start' x='409.04' y='-1561.87'>varchar</text>
+<polygon fill='#e7e2dd' points='92.71,-1480.67 92.71,-1540.67 526.71,-1540.67 526.71,-1480.67 92.71,-1480.67' stroke='transparent'/>
+<polygon fill='none' points='92.71,-1480.67 92.71,-1540.67 526.71,-1540.67 526.71,-1480.67 92.71,-1480.67' stroke='#29235c'/>
+<text fill='#29235c' font-family='Helvetica,sans-Serif' font-size='32.00' text-anchor='start' x='103.71' y='-1500.87'>password &#160;&#160;&#160;</text>
+<text fill='#29235c' font-family='Helvetica,sans-Serif' font-size='32.00' font-style='italic' text-anchor='start' x='409.04' y='-1501.87'>varchar</text>
+<polygon fill='#e7e2dd' points='92.71,-1420.67 92.71,-1480.67 526.71,-1480.67 526.71,-1420.67 92.71,-1420.67' stroke='transparent'/>
+<polygon fill='none' points='92.71,-1420.67 92.71,-1480.67 526.71,-1480.67 526.71,-1420.67 92.71,-1420.67' stroke='#29235c'/>
+<text fill='#29235c' font-family='Helvetica,sans-Serif' font-size='32.00' text-anchor='start' x='103.51' y='-1440.87'>subscription_status &#160;&#160;&#160;</text>
+<text fill='#29235c' font-family='Helvetica,sans-Serif' font-size='32.00' font-style='italic' text-anchor='start' x='412.64' y='-1441.87'>substat</text>
+<polygon fill='#e7e2dd' points='92.71,-1360.67 92.71,-1420.67 526.71,-1420.67 526.71,-1360.67 92.71,-1360.67' stroke='transparent'/>
+<polygon fill='none' points='92.71,-1360.67 92.71,-1420.67 526.71,-1420.67 526.71,-1360.67 92.71,-1360.67' stroke='#29235c'/>
+<text fill='#29235c' font-family='Helvetica,sans-Serif' font-size='32.00' text-anchor='start' x='103.71' y='-1380.87'>created_at &#160;&#160;&#160;</text>
+<text fill='#29235c' font-family='Helvetica,sans-Serif' font-size='32.00' font-style='italic' text-anchor='start' x='368.15' y='-1381.87'>timestamp</text>
+<polygon fill='#e7e2dd' points='92.71,-1300.67 92.71,-1360.67 526.71,-1360.67 526.71,-1300.67 92.71,-1300.67' stroke='transparent'/>
+<polygon fill='none' points='92.71,-1300.67 92.71,-1360.67 526.71,-1360.67 526.71,-1300.67 92.71,-1300.67' stroke='#29235c'/>
+<text fill='#29235c' font-family='Helvetica,sans-Serif' font-size='32.00' text-anchor='start' x='103.71' y='-1320.87'>last_login &#160;&#160;&#160;</text>
+<text fill='#29235c' font-family='Helvetica,sans-Serif' font-size='32.00' font-style='italic' text-anchor='start' x='368.15' y='-1321.87'>timestamp</text>
+<polygon fill='#e7e2dd' points='92.71,-1240.67 92.71,-1300.67 526.71,-1300.67 526.71,-1240.67 92.71,-1240.67' stroke='transparent'/>
+<polygon fill='none' points='92.71,-1240.67 92.71,-1300.67 526.71,-1300.67 526.71,-1240.67 92.71,-1240.67' stroke='#29235c'/>
+<text fill='#29235c' font-family='Helvetica,sans-Serif' font-size='32.00' text-anchor='start' x='103.71' y='-1260.87'>country &#160;&#160;&#160;</text>
+<text fill='#29235c' font-family='Helvetica,sans-Serif' font-size='32.00' font-style='italic' text-anchor='start' x='409.04' y='-1261.87'>varchar</text>
+<polygon fill='none' points='91.71,-1239.67 91.71,-1781.67 527.71,-1781.67 527.71,-1239.67 91.71,-1239.67' stroke='#29235c' stroke-width='2'/>
+</g>
+
+<g class='edge' id='edge15'>
+<title>Users:e&#45;&gt;substat:w</title>
+<path d='M527.71,-1450.67C726.65,-1450.67 499.6,-1755.99 655.43,-1879.67 710.3,-1923.22 1215.53,-1906.91 1284.75,-1917.67 1383.14,-1932.96 1402.36,-1972.67 1501.93,-1972.67' fill='none' stroke='#29235c' stroke-width='3'/>
+</g>
+
+<g class='node' id='Transactions'>
+<title>Transactions</title>
+<ellipse cx='970.09' cy='-1570.67' fill='none' rx='314.83' ry='299.63' stroke='black' stroke-width='0'/>
+<polygon fill='#1d71b8' points='750.09,-1720.67 750.09,-1780.67 1191.09,-1780.67 1191.09,-1720.67 750.09,-1720.67' stroke='transparent'/>
+<polygon fill='none' points='750.09,-1720.67 750.09,-1780.67 1191.09,-1780.67 1191.09,-1720.67 750.09,-1720.67' stroke='#29235c'/>
+<text fill='#ffffff' font-family='Helvetica,sans-Serif' font-size='32.00' font-weight='bold' text-anchor='start' x='816.77' y='-1741.87'> &#160;&#160;&#160;&#160;&#160;&#160;Transactions &#160;&#160;&#160;&#160;&#160;&#160;</text>
+<polygon fill='#e7e2dd' points='750.09,-1660.67 750.09,-1720.67 1191.09,-1720.67 1191.09,-1660.67 750.09,-1660.67' stroke='transparent'/>
+<polygon fill='none' points='750.09,-1660.67 750.09,-1720.67 1191.09,-1720.67 1191.09,-1660.67 750.09,-1660.67' stroke='#29235c'/>
+<text fill='#29235c' font-family='Helvetica,sans-Serif' font-size='32.00' font-weight='bold' text-anchor='start' x='761.09' y='-1681.87'>transaction_id</text>
+<text fill='#29235c' font-family='Helvetica,sans-Serif' font-size='32.00' text-anchor='start' x='960.25' y='-1681.87'> &#160;&#160;&#160;</text>
+<text fill='#29235c' font-family='Helvetica,sans-Serif' font-size='32.00' font-style='italic' text-anchor='start' x='1146.31' y='-1681.87'>int</text>
+<polygon fill='#e7e2dd' points='750.09,-1600.67 750.09,-1660.67 1191.09,-1660.67 1191.09,-1600.67 750.09,-1600.67' stroke='transparent'/>
+<polygon fill='none' points='750.09,-1600.67 750.09,-1660.67 1191.09,-1660.67 1191.09,-1600.67 750.09,-1600.67' stroke='#29235c'/>
+<text fill='#29235c' font-family='Helvetica,sans-Serif' font-size='32.00' text-anchor='start' x='761.09' y='-1620.87'>user_id &#160;&#160;&#160;</text>
+<text fill='#29235c' font-family='Helvetica,sans-Serif' font-size='32.00' font-style='italic' text-anchor='start' x='1146.31' y='-1621.87'>int</text>
+<polygon fill='#e7e2dd' points='750.09,-1540.67 750.09,-1600.67 1191.09,-1600.67 1191.09,-1540.67 750.09,-1540.67' stroke='transparent'/>
+<polygon fill='none' points='750.09,-1540.67 750.09,-1600.67 1191.09,-1600.67 1191.09,-1540.67 750.09,-1540.67' stroke='#29235c'/>
+<text fill='#29235c' font-family='Helvetica,sans-Serif' font-size='32.00' text-anchor='start' x='761.09' y='-1560.87'>total_amount &#160;&#160;&#160;</text>
+<text fill='#29235c' font-family='Helvetica,sans-Serif' font-size='32.00' font-style='italic' text-anchor='start' x='1069.87' y='-1561.87'>decimal</text>
+<polygon fill='#e7e2dd' points='750.09,-1480.67 750.09,-1540.67 1191.09,-1540.67 1191.09,-1480.67 750.09,-1480.67' stroke='transparent'/>
+<polygon fill='none' points='750.09,-1480.67 750.09,-1540.67 1191.09,-1540.67 1191.09,-1480.67 750.09,-1480.67' stroke='#29235c'/>
+<text fill='#29235c' font-family='Helvetica,sans-Serif' font-size='32.00' text-anchor='start' x='761.09' y='-1500.87'>payment_method &#160;&#160;&#160;</text>
+<text fill='#29235c' font-family='Helvetica,sans-Serif' font-size='32.00' font-style='italic' text-anchor='start' x='1073.42' y='-1501.87'>varchar</text>
+<polygon fill='#e7e2dd' points='750.09,-1420.67 750.09,-1480.67 1191.09,-1480.67 1191.09,-1420.67 750.09,-1420.67' stroke='transparent'/>
+<polygon fill='none' points='750.09,-1420.67 750.09,-1480.67 1191.09,-1480.67 1191.09,-1420.67 750.09,-1420.67' stroke='#29235c'/>
+<text fill='#29235c' font-family='Helvetica,sans-Serif' font-size='32.00' text-anchor='start' x='761.09' y='-1440.87'>status &#160;&#160;&#160;</text>
+<text fill='#29235c' font-family='Helvetica,sans-Serif' font-size='32.00' font-style='italic' text-anchor='start' x='1128.51' y='-1441.87'>stat</text>
+<polygon fill='#e7e2dd' points='750.09,-1360.67 750.09,-1420.67 1191.09,-1420.67 1191.09,-1360.67 750.09,-1360.67' stroke='transparent'/>
+<polygon fill='none' points='750.09,-1360.67 750.09,-1420.67 1191.09,-1420.67 1191.09,-1360.67 750.09,-1360.67' stroke='#29235c'/>
+<text fill='#29235c' font-family='Helvetica,sans-Serif' font-size='32.00' text-anchor='start' x='761.04' y='-1380.87'>transaction_date &#160;&#160;&#160;</text>
+<text fill='#29235c' font-family='Helvetica,sans-Serif' font-size='32.00' font-style='italic' text-anchor='start' x='1032.81' y='-1381.87'>timestamp</text>
+<polygon fill='none' points='748.59,-1359.67 748.59,-1781.67 1191.59,-1781.67 1191.59,-1359.67 748.59,-1359.67' stroke='#29235c' stroke-width='2'/>
+</g>
+
+
+<g class='edge' id='edge2'>
+<title>Users:e&#45;&gt;Transactions:w</title>
+<path d='M527.71,-1690.67C626.17,-1690.67 645.85,-1634.7 738.92,-1630.87' fill='none' stroke='#29235c' stroke-width='3'/>
+<polygon fill='#29235c' points='739.16,-1634.37 749.09,-1630.67 739.02,-1627.37 739.16,-1634.37' stroke='#29235c' stroke-width='3'/>
+<text fill='#29235c' font-family='Helvetica,sans-Serif' font-size='32.00' text-anchor='middle' x='740.19' y='-1640.27'>1</text>
+<text fill='#29235c' font-family='Helvetica,sans-Serif' font-size='32.00' text-anchor='middle' x='521.49' y='-1700.27'>*</text>
+</g>
+
+<g class='node' id='Subscriptions'>
+<title>Subscriptions</title>
+<ellipse cx='970.09' cy='-2226.67' fill='none' rx='294.31' ry='299.63' stroke='black' stroke-width='0'/>
+<polygon fill='#1d71b8' points='764.09,-2376.67 764.09,-2436.67 1176.09,-2436.67 1176.09,-2376.67 764.09,-2376.67' stroke='transparent'/>
+<polygon fill='none' points='764.09,-2376.67 764.09,-2436.67 1176.09,-2436.67 1176.09,-2376.67 764.09,-2376.67' stroke='#29235c'/>
+<text fill='#ffffff' font-family='Helvetica,sans-Serif' font-size='32.00' font-weight='bold' text-anchor='start' x='811.82' y='-2397.87'> &#160;&#160;&#160;&#160;&#160;&#160;Subscriptions &#160;&#160;&#160;&#160;&#160;&#160;</text>
+<polygon fill='#e7e2dd' points='764.09,-2316.67 764.09,-2376.67 1176.09,-2376.67 1176.09,-2316.67 764.09,-2316.67' stroke='transparent'/>
+<polygon fill='none' points='764.09,-2316.67 764.09,-2376.67 1176.09,-2376.67 1176.09,-2316.67 764.09,-2316.67' stroke='#29235c'/>
+<text fill='#29235c' font-family='Helvetica,sans-Serif' font-size='32.00' font-weight='bold' text-anchor='start' x='775.09' y='-2337.87'>subscription_id</text>
+<text fill='#29235c' font-family='Helvetica,sans-Serif' font-size='32.00' text-anchor='start' x='988.46' y='-2337.87'> &#160;&#160;&#160;</text>
+<text fill='#29235c' font-family='Helvetica,sans-Serif' font-size='32.00' font-style='italic' text-anchor='start' x='1131.31' y='-2337.87'>int</text>
+<polygon fill='#e7e2dd' points='764.09,-2256.67 764.09,-2316.67 1176.09,-2316.67 1176.09,-2256.67 764.09,-2256.67' stroke='transparent'/>
+<polygon fill='none' points='764.09,-2256.67 764.09,-2316.67 1176.09,-2316.67 1176.09,-2256.67 764.09,-2256.67' stroke='#29235c'/>
+<text fill='#29235c' font-family='Helvetica,sans-Serif' font-size='32.00' text-anchor='start' x='775.09' y='-2276.87'>user_id &#160;&#160;&#160;</text>
+<text fill='#29235c' font-family='Helvetica,sans-Serif' font-size='32.00' font-style='italic' text-anchor='start' x='1131.31' y='-2277.87'>int</text>
+<polygon fill='#e7e2dd' points='764.09,-2196.67 764.09,-2256.67 1176.09,-2256.67 1176.09,-2196.67 764.09,-2196.67' stroke='transparent'/>
+<polygon fill='none' points='764.09,-2196.67 764.09,-2256.67 1176.09,-2256.67 1176.09,-2196.67 764.09,-2196.67' stroke='#29235c'/>
+<text fill='#29235c' font-family='Helvetica,sans-Serif' font-size='32.00' text-anchor='start' x='774.83' y='-2216.87'>subscription_type &#160;&#160;&#160;</text>
+<text fill='#29235c' font-family='Helvetica,sans-Serif' font-size='32.00' font-style='italic' text-anchor='start' x='1058.75' y='-2217.87'>varchar</text>
+<polygon fill='#e7e2dd' points='764.09,-2136.67 764.09,-2196.67 1176.09,-2196.67 1176.09,-2136.67 764.09,-2136.67' stroke='transparent'/>
+<polygon fill='none' points='764.09,-2136.67 764.09,-2196.67 1176.09,-2196.67 1176.09,-2136.67 764.09,-2136.67' stroke='#29235c'/>
+<text fill='#29235c' font-family='Helvetica,sans-Serif' font-size='32.00' text-anchor='start' x='775.09' y='-2156.87'>start_date &#160;&#160;&#160;</text>
+<text fill='#29235c' font-family='Helvetica,sans-Serif' font-size='32.00' font-style='italic' text-anchor='start' x='1102.83' y='-2157.87'>date</text>
+<polygon fill='#e7e2dd' points='764.09,-2076.67 764.09,-2136.67 1176.09,-2136.67 1176.09,-2076.67 764.09,-2076.67' stroke='transparent'/>
+<polygon fill='none' points='764.09,-2076.67 764.09,-2136.67 1176.09,-2136.67 1176.09,-2076.67 764.09,-2076.67' stroke='#29235c'/>
+<text fill='#29235c' font-family='Helvetica,sans-Serif' font-size='32.00' text-anchor='start' x='775.09' y='-2096.87'>end_date &#160;&#160;&#160;</text>
+<text fill='#29235c' font-family='Helvetica,sans-Serif' font-size='32.00' font-style='italic' text-anchor='start' x='1102.83' y='-2097.87'>date</text>
+<polygon fill='#e7e2dd' points='764.09,-2016.67 764.09,-2076.67 1176.09,-2076.67 1176.09,-2016.67 764.09,-2016.67' stroke='transparent'/>
+<polygon fill='none' points='764.09,-2016.67 764.09,-2076.67 1176.09,-2076.67 1176.09,-2016.67 764.09,-2016.67' stroke='#29235c'/>
+<text fill='#29235c' font-family='Helvetica,sans-Serif' font-size='32.00' text-anchor='start' x='775.09' y='-2036.87'>status &#160;&#160;&#160;</text>
+<text fill='#29235c' font-family='Helvetica,sans-Serif' font-size='32.00' font-style='italic' text-anchor='start' x='1061.94' y='-2037.87'>substat</text>
+<polygon fill='none' points='763.09,-2015.67 763.09,-2437.67 1177.09,-2437.67 1177.09,-2015.67 763.09,-2015.67' stroke='#29235c' stroke-width='2'/>
+</g>
+
+
+<g class='edge' id='edge8'>
+<title>Users:e&#45;&gt;Subscriptions:w</title>
+<path d='M527.71,-1690.67C809.03,-1690.67 486.36,-2272.2 752.93,-2286.4' fill='none' stroke='#29235c' stroke-width='3'/>
+<polygon fill='#29235c' points='753,-2289.9 763.09,-2286.67 753.18,-2282.91 753,-2289.9' stroke='#29235c' stroke-width='3'/>
+<text fill='#29235c' font-family='Helvetica,sans-Serif' font-size='32.00' text-anchor='middle' x='754.19' y='-2296.27'>1</text>
+<text fill='#29235c' font-family='Helvetica,sans-Serif' font-size='32.00' text-anchor='middle' x='521.49' y='-1661.87'>*</text>
+</g>
+
+<g class='node' id='Reviews'>
+<title>Reviews</title>
+<ellipse cx='970.09' cy='-952.67' fill='none' rx='253.7' ry='299.63' stroke='black' stroke-width='0'/>
+<polygon fill='#1d71b8' points='793.09,-1102.67 793.09,-1162.67 1148.09,-1162.67 1148.09,-1102.67 793.09,-1102.67' stroke='transparent'/>
+<polygon fill='none' points='793.09,-1102.67 793.09,-1162.67 1148.09,-1162.67 1148.09,-1102.67 793.09,-1102.67' stroke='#29235c'/>
+<text fill='#ffffff' font-family='Helvetica,sans-Serif' font-size='32.00' font-weight='bold' text-anchor='start' x='847.9' y='-1123.87'> &#160;&#160;&#160;&#160;&#160;&#160;Reviews &#160;&#160;&#160;&#160;&#160;&#160;</text>
+<polygon fill='#e7e2dd' points='793.09,-1042.67 793.09,-1102.67 1148.09,-1102.67 1148.09,-1042.67 793.09,-1042.67' stroke='transparent'/>
+<polygon fill='none' points='793.09,-1042.67 793.09,-1102.67 1148.09,-1102.67 1148.09,-1042.67 793.09,-1042.67' stroke='#29235c'/>
+<text fill='#29235c' font-family='Helvetica,sans-Serif' font-size='32.00' font-weight='bold' text-anchor='start' x='804.09' y='-1063.87'>review_id</text>
+<text fill='#29235c' font-family='Helvetica,sans-Serif' font-size='32.00' text-anchor='start' x='939.2' y='-1063.87'> &#160;&#160;&#160;</text>
+<text fill='#29235c' font-family='Helvetica,sans-Serif' font-size='32.00' font-style='italic' text-anchor='start' x='1103.31' y='-1063.87'>int</text>
+<polygon fill='#e7e2dd' points='793.09,-982.67 793.09,-1042.67 1148.09,-1042.67 1148.09,-982.67 793.09,-982.67' stroke='transparent'/>
+<polygon fill='none' points='793.09,-982.67 793.09,-1042.67 1148.09,-1042.67 1148.09,-982.67 793.09,-982.67' stroke='#29235c'/>
+<text fill='#29235c' font-family='Helvetica,sans-Serif' font-size='32.00' text-anchor='start' x='804.09' y='-1002.87'>user_id &#160;&#160;&#160;</text>
+<text fill='#29235c' font-family='Helvetica,sans-Serif' font-size='32.00' font-style='italic' text-anchor='start' x='1103.31' y='-1003.87'>int</text>
+<polygon fill='#e7e2dd' points='793.09,-922.67 793.09,-982.67 1148.09,-982.67 1148.09,-922.67 793.09,-922.67' stroke='transparent'/>
+<polygon fill='none' points='793.09,-922.67 793.09,-982.67 1148.09,-982.67 1148.09,-922.67 793.09,-922.67' stroke='#29235c'/>
+<text fill='#29235c' font-family='Helvetica,sans-Serif' font-size='32.00' text-anchor='start' x='804.09' y='-942.87'>product_id &#160;&#160;&#160;</text>
+<text fill='#29235c' font-family='Helvetica,sans-Serif' font-size='32.00' font-style='italic' text-anchor='start' x='1103.31' y='-943.87'>int</text>
+<polygon fill='#e7e2dd' points='793.09,-862.67 793.09,-922.67 1148.09,-922.67 1148.09,-862.67 793.09,-862.67' stroke='transparent'/>
+<polygon fill='none' points='793.09,-862.67 793.09,-922.67 1148.09,-922.67 1148.09,-862.67 793.09,-862.67' stroke='#29235c'/>
+<text fill='#29235c' font-family='Helvetica,sans-Serif' font-size='32.00' text-anchor='start' x='804.09' y='-882.87'>rating &#160;&#160;&#160;</text>
+<text fill='#29235c' font-family='Helvetica,sans-Serif' font-size='32.00' font-style='italic' text-anchor='start' x='1103.31' y='-883.87'>int</text>
+<polygon fill='#e7e2dd' points='793.09,-802.67 793.09,-862.67 1148.09,-862.67 1148.09,-802.67 793.09,-802.67' stroke='transparent'/>
+<polygon fill='none' points='793.09,-802.67 793.09,-862.67 1148.09,-862.67 1148.09,-802.67 793.09,-802.67' stroke='#29235c'/>
+<text fill='#29235c' font-family='Helvetica,sans-Serif' font-size='32.00' text-anchor='start' x='804.09' y='-822.87'>review &#160;&#160;&#160;</text>
+<text fill='#29235c' font-family='Helvetica,sans-Serif' font-size='32.00' font-style='italic' text-anchor='start' x='1085.51' y='-823.87'>text</text>
+<polygon fill='#e7e2dd' points='793.09,-742.67 793.09,-802.67 1148.09,-802.67 1148.09,-742.67 793.09,-742.67' stroke='transparent'/>
+<polygon fill='none' points='793.09,-742.67 793.09,-802.67 1148.09,-802.67 1148.09,-742.67 793.09,-742.67' stroke='#29235c'/>
+<text fill='#29235c' font-family='Helvetica,sans-Serif' font-size='32.00' text-anchor='start' x='803.72' y='-762.87'>created_at &#160;&#160;&#160;</text>
+<text fill='#29235c' font-family='Helvetica,sans-Serif' font-size='32.00' font-style='italic' text-anchor='start' x='989.81' y='-763.87'>timestamp</text>
+<polygon fill='none' points='791.59,-741.67 791.59,-1163.67 1148.59,-1163.67 1148.59,-741.67 791.59,-741.67' stroke='#29235c' stroke-width='2'/>
+</g>
+
+
+<g class='edge' id='edge12'>
+<title>Users:e&#45;&gt;Reviews:w</title>
+<path d='M527.71,-1690.67C726.65,-1690.67 578.75,-1445.23 655.43,-1261.67 702.7,-1148.48 667.94,-1020.16 781.75,-1012.98' fill='none' stroke='#29235c' stroke-width='3'/>
+<polygon fill='#29235c' points='782.2,-1016.47 792.09,-1012.67 781.99,-1009.47 782.2,-1016.47' stroke='#29235c' stroke-width='3'/>
+<text fill='#29235c' font-family='Helvetica,sans-Serif' font-size='32.00' text-anchor='middle' x='783.19' y='-983.87'>1</text>
+<text fill='#29235c' font-family='Helvetica,sans-Serif' font-size='32.00' text-anchor='middle' x='533.94' y='-1700.27'>*</text>
+</g>
+
+<g class='node' id='Products'>
+<title>Products</title>
+<ellipse cx='309.71' cy='-384.67' fill='none' rx='217.58' ry='384.83' stroke='black' stroke-width='0'/>
+<polygon fill='#1d71b8' points='157.71,-594.67 157.71,-654.67 461.71,-654.67 461.71,-594.67 157.71,-594.67' stroke='transparent'/>
+<polygon fill='none' points='157.71,-594.67 157.71,-654.67 461.71,-654.67 461.71,-594.67 157.71,-594.67' stroke='#29235c'/>
+<text fill='#ffffff' font-family='Helvetica,sans-Serif' font-size='32.00' font-weight='bold' text-anchor='start' x='184.34' y='-615.87'> &#160;&#160;&#160;&#160;&#160;&#160;Products &#160;&#160;&#160;&#160;&#160;&#160;</text>
+<polygon fill='#e7e2dd' points='157.71,-534.67 157.71,-594.67 461.71,-594.67 461.71,-534.67 157.71,-534.67' stroke='transparent'/>
+<polygon fill='none' points='157.71,-534.67 157.71,-594.67 461.71,-594.67 461.71,-534.67 157.71,-534.67' stroke='#29235c'/>
+<text fill='#29235c' font-family='Helvetica,sans-Serif' font-size='32.00' font-weight='bold' text-anchor='start' x='168.71' y='-555.87'>product_id</text>
+<text fill='#29235c' font-family='Helvetica,sans-Serif' font-size='32.00' text-anchor='start' x='318.09' y='-555.87'> &#160;&#160;&#160;</text>
+<text fill='#29235c' font-family='Helvetica,sans-Serif' font-size='32.00' font-style='italic' text-anchor='start' x='416.93' y='-555.87'>int</text>
+<polygon fill='#e7e2dd' points='157.71,-474.67 157.71,-534.67 461.71,-534.67 461.71,-474.67 157.71,-474.67' stroke='transparent'/>
+<polygon fill='none' points='157.71,-474.67 157.71,-534.67 461.71,-534.67 461.71,-474.67 157.71,-474.67' stroke='#29235c'/>
+<text fill='#29235c' font-family='Helvetica,sans-Serif' font-size='32.00' text-anchor='start' x='168.71' y='-494.87'>title &#160;&#160;&#160;</text>
+<text fill='#29235c' font-family='Helvetica,sans-Serif' font-size='32.00' font-style='italic' text-anchor='start' x='344.04' y='-495.87'>varchar</text>
+<polygon fill='#e7e2dd' points='157.71,-414.67 157.71,-474.67 461.71,-474.67 461.71,-414.67 157.71,-414.67' stroke='transparent'/>
+<polygon fill='none' points='157.71,-414.67 157.71,-474.67 461.71,-474.67 461.71,-414.67 157.71,-414.67' stroke='#29235c'/>
+<text fill='#29235c' font-family='Helvetica,sans-Serif' font-size='32.00' text-anchor='start' x='168.71' y='-434.87'>description &#160;&#160;&#160;</text>
+<text fill='#29235c' font-family='Helvetica,sans-Serif' font-size='32.00' font-style='italic' text-anchor='start' x='399.14' y='-435.87'>text</text>
+<polygon fill='#e7e2dd' points='157.71,-354.67 157.71,-414.67 461.71,-414.67 461.71,-354.67 157.71,-354.67' stroke='transparent'/>
+<polygon fill='none' points='157.71,-354.67 157.71,-414.67 461.71,-414.67 461.71,-354.67 157.71,-354.67' stroke='#29235c'/>
+<text fill='#29235c' font-family='Helvetica,sans-Serif' font-size='32.00' text-anchor='start' x='168.71' y='-374.87'>price &#160;&#160;&#160;</text>
+<text fill='#29235c' font-family='Helvetica,sans-Serif' font-size='32.00' font-style='italic' text-anchor='start' x='340.49' y='-375.87'>decimal</text>
+<polygon fill='#e7e2dd' points='157.71,-294.67 157.71,-354.67 461.71,-354.67 461.71,-294.67 157.71,-294.67' stroke='transparent'/>
+<polygon fill='none' points='157.71,-294.67 157.71,-354.67 461.71,-354.67 461.71,-294.67 157.71,-294.67' stroke='#29235c'/>
+<text fill='#29235c' font-family='Helvetica,sans-Serif' font-size='32.00' text-anchor='start' x='168.71' y='-314.87'>category_id &#160;&#160;&#160;</text>
+<text fill='#29235c' font-family='Helvetica,sans-Serif' font-size='32.00' font-style='italic' text-anchor='start' x='416.93' y='-315.87'>int</text>
+<polygon fill='#e7e2dd' points='157.71,-234.67 157.71,-294.67 461.71,-294.67 461.71,-234.67 157.71,-234.67' stroke='transparent'/>
+<polygon fill='none' points='157.71,-234.67 157.71,-294.67 461.71,-294.67 461.71,-234.67 157.71,-234.67' stroke='#29235c'/>
+<text fill='#29235c' font-family='Helvetica,sans-Serif' font-size='32.00' text-anchor='start' x='168.45' y='-254.87'>release_date &#160;&#160;&#160;</text>
+<text fill='#29235c' font-family='Helvetica,sans-Serif' font-size='32.00' font-style='italic' text-anchor='start' x='388.58' y='-255.87'>date</text>
+<polygon fill='#e7e2dd' points='157.71,-174.67 157.71,-234.67 461.71,-234.67 461.71,-174.67 157.71,-174.67' stroke='transparent'/>
+<polygon fill='none' points='157.71,-174.67 157.71,-234.67 461.71,-234.67 461.71,-174.67 157.71,-174.67' stroke='#29235c'/>
+<text fill='#29235c' font-family='Helvetica,sans-Serif' font-size='32.00' text-anchor='start' x='168.71' y='-194.87'>stock &#160;&#160;&#160;</text>
+<text fill='#29235c' font-family='Helvetica,sans-Serif' font-size='32.00' font-style='italic' text-anchor='start' x='416.93' y='-195.87'>int</text>
+<polygon fill='#e7e2dd' points='157.71,-114.67 157.71,-174.67 461.71,-174.67 461.71,-114.67 157.71,-114.67' stroke='transparent'/>
+<polygon fill='none' points='157.71,-114.67 157.71,-174.67 461.71,-174.67 461.71,-114.67 157.71,-114.67' stroke='#29235c'/>
+<text fill='#29235c' font-family='Helvetica,sans-Serif' font-size='32.00' text-anchor='start' x='168.71' y='-134.87'>rating &#160;&#160;&#160;</text>
+<text fill='#29235c' font-family='Helvetica,sans-Serif' font-size='32.00' font-style='italic' text-anchor='start' x='340.49' y='-135.87'>decimal</text>
+<polygon fill='none' points='156.71,-113.67 156.71,-655.67 462.71,-655.67 462.71,-113.67 156.71,-113.67' stroke='#29235c' stroke-width='2'/>
+</g>
+
+<g class='node' id='Categories'>
+<title>Categories</title>
+<ellipse cx='970.09' cy='-385.67' fill='none' rx='215.84' ry='172.57' stroke='black' stroke-width='0'/>
+<polygon fill='#1d71b8' points='820.09,-445.67 820.09,-505.67 1121.09,-505.67 1121.09,-445.67 820.09,-445.67' stroke='transparent'/>
+<polygon fill='none' points='820.09,-445.67 820.09,-505.67 1121.09,-505.67 1121.09,-445.67 820.09,-445.67' stroke='#29235c'/>
+<text fill='#ffffff' font-family='Helvetica,sans-Serif' font-size='32.00' font-weight='bold' text-anchor='start' x='830.99' y='-466.87'> &#160;&#160;&#160;&#160;&#160;&#160;Categories &#160;&#160;&#160;&#160;&#160;&#160;</text>
+<polygon fill='#e7e2dd' points='820.09,-385.67 820.09,-445.67 1121.09,-445.67 1121.09,-385.67 820.09,-385.67' stroke='transparent'/>
+<polygon fill='none' points='820.09,-385.67 820.09,-445.67 1121.09,-445.67 1121.09,-385.67 820.09,-385.67' stroke='#29235c'/>
+<text fill='#29235c' font-family='Helvetica,sans-Serif' font-size='32.00' font-weight='bold' text-anchor='start' x='831.09' y='-406.87'>category_id</text>
+<text fill='#29235c' font-family='Helvetica,sans-Serif' font-size='32.00' text-anchor='start' x='996.47' y='-406.87'> &#160;&#160;&#160;</text>
+<text fill='#29235c' font-family='Helvetica,sans-Serif' font-size='32.00' font-style='italic' text-anchor='start' x='1076.31' y='-406.87'>int</text>
+<polygon fill='#e7e2dd' points='820.09,-325.67 820.09,-385.67 1121.09,-385.67 1121.09,-325.67 820.09,-325.67' stroke='transparent'/>
+<polygon fill='none' points='820.09,-325.67 820.09,-385.67 1121.09,-385.67 1121.09,-325.67 820.09,-325.67' stroke='#29235c'/>
+<text fill='#29235c' font-family='Helvetica,sans-Serif' font-size='32.00' text-anchor='start' x='831.09' y='-345.87'>name &#160;&#160;&#160;</text>
+<text fill='#29235c' font-family='Helvetica,sans-Serif' font-size='32.00' font-style='italic' text-anchor='start' x='1003.42' y='-346.87'>varchar</text>
+<polygon fill='#e7e2dd' points='820.09,-265.67 820.09,-325.67 1121.09,-325.67 1121.09,-265.67 820.09,-265.67' stroke='transparent'/>
+<polygon fill='none' points='820.09,-265.67 820.09,-325.67 1121.09,-325.67 1121.09,-265.67 820.09,-265.67' stroke='#29235c'/>
+<text fill='#29235c' font-family='Helvetica,sans-Serif' font-size='32.00' text-anchor='start' x='831.09' y='-285.87'>description &#160;&#160;&#160;</text>
+<text fill='#29235c' font-family='Helvetica,sans-Serif' font-size='32.00' font-style='italic' text-anchor='start' x='1058.51' y='-286.87'>text</text>
+<polygon fill='none' points='818.59,-264.67 818.59,-506.67 1121.59,-506.67 1121.59,-264.67 818.59,-264.67' stroke='#29235c' stroke-width='2'/>
+</g>
+
+
+<g class='edge' id='edge10'>
+<title>Products:e&#45;&gt;Categories:w</title>
+<path d='M462.71,-324.67C622.67,-324.67 654.29,-411.8 808.73,-415.54' fill='none' stroke='#29235c' stroke-width='3'/>
+<polygon fill='#29235c' points='809.05,-419.05 819.09,-415.67 809.13,-412.05 809.05,-419.05' stroke='#29235c' stroke-width='3'/>
+<text fill='#29235c' font-family='Helvetica,sans-Serif' font-size='32.00' text-anchor='middle' x='810.19' y='-386.87'>1</text>
+<text fill='#29235c' font-family='Helvetica,sans-Serif' font-size='32.00' text-anchor='middle' x='456.49' y='-295.87'>*</text>
+</g>
+
+<g class='node' id='Transaction_Details'>
+<title>Transaction_Details</title>
+<ellipse cx='1626.93' cy='-800.67' fill='none' rx='306.35' ry='214.92' stroke='black' stroke-width='0'/>
+<polygon fill='#1d71b8' points='1412.93,-890.67 1412.93,-950.67 1841.93,-950.67 1841.93,-890.67 1412.93,-890.67' stroke='transparent'/>
+<polygon fill='none' points='1412.93,-890.67 1412.93,-950.67 1841.93,-950.67 1841.93,-890.67 1412.93,-890.67' stroke='#29235c'/>
+<text fill='#ffffff' font-family='Helvetica,sans-Serif' font-size='32.00' font-weight='bold' text-anchor='start' x='1423.83' y='-911.87'> &#160;&#160;&#160;&#160;&#160;&#160;Transaction_Details &#160;&#160;&#160;&#160;&#160;&#160;</text>
+<polygon fill='#e7e2dd' points='1412.93,-830.67 1412.93,-890.67 1841.93,-890.67 1841.93,-830.67 1412.93,-830.67' stroke='transparent'/>
+<polygon fill='none' points='1412.93,-830.67 1412.93,-890.67 1841.93,-890.67 1841.93,-830.67 1412.93,-830.67' stroke='#29235c'/>
+<text fill='#29235c' font-family='Helvetica,sans-Serif' font-size='32.00' font-weight='bold' text-anchor='start' x='1423.93' y='-851.87'>transaction_detail_id</text>
+<text fill='#29235c' font-family='Helvetica,sans-Serif' font-size='32.00' text-anchor='start' x='1717.34' y='-851.87'> &#160;&#160;&#160;</text>
+<text fill='#29235c' font-family='Helvetica,sans-Serif' font-size='32.00' font-style='italic' text-anchor='start' x='1797.15' y='-851.87'>int</text>
+<polygon fill='#e7e2dd' points='1412.93,-770.67 1412.93,-830.67 1841.93,-830.67 1841.93,-770.67 1412.93,-770.67' stroke='transparent'/>
+<polygon fill='none' points='1412.93,-770.67 1412.93,-830.67 1841.93,-830.67 1841.93,-770.67 1412.93,-770.67' stroke='#29235c'/>
+<text fill='#29235c' font-family='Helvetica,sans-Serif' font-size='32.00' text-anchor='start' x='1423.93' y='-790.87'>transaction_id &#160;&#160;&#160;</text>
+<text fill='#29235c' font-family='Helvetica,sans-Serif' font-size='32.00' font-style='italic' text-anchor='start' x='1797.15' y='-791.87'>int</text>
+<polygon fill='#e7e2dd' points='1412.93,-710.67 1412.93,-770.67 1841.93,-770.67 1841.93,-710.67 1412.93,-710.67' stroke='transparent'/>
+<polygon fill='none' points='1412.93,-710.67 1412.93,-770.67 1841.93,-770.67 1841.93,-710.67 1412.93,-710.67' stroke='#29235c'/>
+<text fill='#29235c' font-family='Helvetica,sans-Serif' font-size='32.00' text-anchor='start' x='1423.93' y='-730.87'>product_id &#160;&#160;&#160;</text>
+<text fill='#29235c' font-family='Helvetica,sans-Serif' font-size='32.00' font-style='italic' text-anchor='start' x='1797.15' y='-731.87'>int</text>
+<polygon fill='#e7e2dd' points='1412.93,-650.67 1412.93,-710.67 1841.93,-710.67 1841.93,-650.67 1412.93,-650.67' stroke='transparent'/>
+<polygon fill='none' points='1412.93,-650.67 1412.93,-710.67 1841.93,-710.67 1841.93,-650.67 1412.93,-650.67' stroke='#29235c'/>
+<text fill='#29235c' font-family='Helvetica,sans-Serif' font-size='32.00' text-anchor='start' x='1423.93' y='-670.87'>quantity &#160;&#160;&#160;</text>
+<text fill='#29235c' font-family='Helvetica,sans-Serif' font-size='32.00' font-style='italic' text-anchor='start' x='1797.15' y='-671.87'>int</text>
+<polygon fill='none' points='1411.43,-649.67 1411.43,-951.67 1842.43,-951.67 1842.43,-649.67 1411.43,-649.67' stroke='#29235c' stroke-width='2'/>
+</g>
+
+
+<g class='edge' id='edge4'>
+<title>Products:e&#45;&gt;Transaction_Details:w</title>
+<path d='M462.71,-564.67C508.46,-564.67 1243.07,-592.81 1284.75,-611.67 1354.81,-643.36 1333.61,-732.18 1401.71,-740.1' fill='none' stroke='#29235c' stroke-width='3'/>
+<polygon fill='#29235c' points='1401.75,-743.61 1411.93,-740.67 1402.14,-736.62 1401.75,-743.61' stroke='#29235c' stroke-width='3'/>
+<text fill='#29235c' font-family='Helvetica,sans-Serif' font-size='32.00' text-anchor='middle' x='1403.03' y='-711.87'>1</text>
+<text fill='#29235c' font-family='Helvetica,sans-Serif' font-size='32.00' text-anchor='middle' x='456.49' y='-535.87'>*</text>
+</g>
+
+
+<g class='edge' id='edge14'>
+<title>Products:e&#45;&gt;Reviews:w</title>
+<path d='M462.71,-564.67C685.49,-564.67 569.53,-941.01 782.05,-952.4' fill='none' stroke='#29235c' stroke-width='3'/>
+<polygon fill='#29235c' points='782,-955.9 792.09,-952.67 782.18,-948.9 782,-955.9' stroke='#29235c' stroke-width='3'/>
+<text fill='#29235c' font-family='Helvetica,sans-Serif' font-size='32.00' text-anchor='middle' x='783.19' y='-923.87'>1</text>
+<text fill='#29235c' font-family='Helvetica,sans-Serif' font-size='32.00' text-anchor='middle' x='456.49' y='-574.27'>*</text>
+</g>
+
+<g class='edge' id='edge16'>
+<title>Transactions:e&#45;&gt;stat:w</title>
+<path d='M1192.09,-1450.67C1331.57,-1450.67 1366.44,-1450.67 1505.93,-1450.67' fill='none' stroke='#29235c' stroke-width='3'/>
+</g>
+
+
+<g class='edge' id='edge6'>
+<title>Transactions:e&#45;&gt;Transaction_Details:w</title>
+<path d='M1192.09,-1690.67C1392.33,-1690.67 1214.5,-830.83 1401.82,-801.44' fill='none' stroke='#29235c' stroke-width='3'/>
+<polygon fill='#29235c' points='1402.22,-804.92 1411.93,-800.67 1401.69,-797.94 1402.22,-804.92' stroke='#29235c' stroke-width='3'/>
+<text fill='#29235c' font-family='Helvetica,sans-Serif' font-size='32.00' text-anchor='middle' x='1403.03' y='-771.87'>1</text>
+<text fill='#29235c' font-family='Helvetica,sans-Serif' font-size='32.00' text-anchor='middle' x='1185.87' y='-1700.27'>*</text>
+</g>
+
+<g class='edge' id='edge17'>
+<title>Subscriptions:e&#45;&gt;substat:w</title>
+<path d='M1177.09,-2046.67C1325.16,-2046.67 1353.86,-1972.67 1501.93,-1972.67' fill='none' stroke='#29235c' stroke-width='3'/>
+</g>
+</g>
+</svg>

@@ -62,49 +62,6 @@ El diseño de los endpoints REST debe estar optimizado para manejar un gran volu
 
     - **Notas**: El token debe tener un tiempo de expiración configurable para evitar uso indebido.
 
-==== 3. Perfil de Usuario
-
-- **GET /api/v1/users/{user_id}**
-    - **Descripción**: Devuelve los detalles del perfil de usuario.
-    - **Cabecera**: El token JWT debe ser incluido en el encabezado.
-
-.Respuesta (JSON)
-[source,json]
-----
-{
-    "user_id": 123,
-    "username": "string",
-    "email": "string",
-    "country": "string",
-    "subscription_status": "active",
-    "created_at": "timestamp",
-    "last_login": "timestamp"
-}
-----
-
-==== 4. Actualización de Perfil
-
-- **PUT /api/v1/users/{user_id}**
-    - **Descripción**: Permite al usuario actualizar sus datos de perfil.
-
-.Cuerpo de la solicitud (JSON)
-[source,json]
-----
-{
-    "username": "string",
-    "email": "string",
-    "password": "string",
-    "country": "string"
-}
-----
-.Respuesta (JSON)
-[source,json]
-----
-{
-    "message": "Profile updated successfully"
-}
-----
-
 === Endpoints para Productos
 
 ==== 1. Listado de Productos
@@ -244,4 +201,3 @@ El diseño de los endpoints REST debe estar optimizado para manejar un gran volu
 ----
 
 
-Este diseño de endpoints REST está pensado para ser modular, escalable y seguro, permitiendo que los usuarios interactúen con la Nintendo eShop de manera fluida.

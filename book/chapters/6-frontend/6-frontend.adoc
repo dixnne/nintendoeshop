@@ -182,4 +182,4 @@ Se ha decidido utilizar **React.js** con **Next.js** para el desarrollo del fron
 
 === Selección
 
-Para una plataforma como Nintendo eShop, donde se espera un alto tráfico, rendimiento ágil, y una experiencia de usuario atractiva, **React.js** es la mejor opción, especialmente si se usa con **Next.js** para aprovechar las capacidades de renderizado en servidor, lo que mejora tanto el rendimiento como el SEO. Complementado con herramientas como **Tailwind CSS** para la interfaz visual, **Redux** para el manejo del estado, y **WebSockets** para actualizaciones en tiempo real, se puede construir una plataforma robusta y escalable.
+Para una plataforma como Nintendo eShop, donde se espera un alto tráfico, rendimiento ágil, y una experiencia de usuario atractiva, **React.js** es la mejor opción, especialmente si se usa con **Next.js** para aprovechar las capacidades de renderizado en servidor, lo que mejora tanto el rendimiento como el SEO. Complementado con herramientas como **Tailwind CSS** para la interfaz visual, y **WebSockets** para actualizaciones en tiempo real, se puede construir una plataforma robusta y escalable.
