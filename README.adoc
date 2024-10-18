@@ -1,12 +1,18 @@
-:fn-ninjas: footnote:[https://ninjas.cl]
+= Asciidoc Nintendo eShop Project
 
-= Asciidoc Book Template
+This is a project proposal for a Nintendo eShop under the next conditions:
 
-This is an example template for making _Asciidoc_ books.
+El proyecto consiste en planificar una página Ecommerce. El alumno debe entregar un informe creado con Asciidoc que contenga las siguientes características:
 
-An example output can be seen online at https://ninjascl.github.io/asciidoc-book-template/.
+- Selección de Servidor.
+- Diseño de base de datos.
+- Diseño de endpoint Rest.
+- Estimación de Costos de Servidor y Operación.
+- Selección Tecnológica Backend (¿CMS o custom?).
+- Selección Tecnológica Frontend.
+- Selección de Profesionales necesarios.
+- Estimación de Plazos para implementar.
 
-You can learn with https://github.com/powerman/asciidoc-cheatsheet[Asciidoc Cheatsheet].
 
 == Technology
 
@@ -42,7 +48,9 @@ These need extra configurations inside the Dockerfile to Work (Puppeteer).
 
 == License
 
-Created with ❤️ by https://ninjas.cl[Camilo Castro] and https://github.com/ninjascl/asciidoc-book-template/graphs/contributors[contributors]footnote:[https://github.com/ninjascl/asciidoc-book-template/graphs/contributors]. for https://ninjas.cl[Ninjas.cl]{fn-ninjas}.
+Project made by Diana Narvaez.
+
+Template created with ❤️ by https://ninjas.cl[Camilo Castro] and https://github.com/ninjascl/asciidoc-book-template/graphs/contributors[contributors]footnote:[https://github.com/ninjascl/asciidoc-book-template/graphs/contributors]. for https://ninjas.cl[Ninjas.cl]{fn-ninjas}.
 
 This document is licensed with http://creativecommons.org/licenses/by-nc-sa/4.0/[Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International]footnote:[http://creativecommons.org/licenses/by-nc-sa/4.0/]
 
