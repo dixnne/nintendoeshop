@@ -1,34 +1,29 @@
 [bibliography]
 == References
 
-A bibliography is a list of works on a subject or by an author that were used or consulted to write a research paper, book or article. It can also be referred to as a list of works cited. It is usually found at the end of a book, article or research paper.
-
-It is recommended to follow *APA 7th Edition*.
-
-- https://apastyle.apa.org/style-grammar-guidelines/references/examples
-- https://libguides.jcu.edu.au/apa/reference-list
-
-Remember, you have to cite every piece of information that came from another source, whether or not it is in your own words. Everything cited in the text must appear in the reference list (except personal communication), and everything in your reference list must be something you have referred to in text. Make sure you don't have anything in one place that isn't in the other.
-
-For APA the reference list is arranged in alphabetical order of authors' surnames. Arrange by first author's name, then by second author if you have the same first author, etc.
-
-If a reference has no author, list it alphabetically according to the title. Ignore the words 'A', 'An' and 'The' at the beginning of a corporate author or title for deciding where it fits alphabetically.
-
-If there are two references by the same author, list them in order of publication date with the older one first.
-
-For example:
-
-- Bloggs, J. S. (n.d.)...
-- Bloggs, J. S. (2016)...
-- Bloggs, J. S. (2018a)....
-- Bloggs, J. S. (2018b, September)...
-- Bloggs, J. S. (in press)...
-
 [bibliography]
-.Books
-
-- [[[inventwithpython]]] Albert Sweigart. 'Inventa tus Propios Juegos de computadora con Python'. http://inventwithpython.com/es. ISBN 978-1514370926
 
 .Websites
 
-- [[[googlepython]]] Google. 'Python Class' http://code.google.com/edu/languages/google-python-class/
+- [[[dbml]]] DBML. 'DBML - Database Markup Language' https://dbml.dbdiagram.io/home/
+
+- [[[elixirfullstack]]] Camilo A. Castro. 'Elixir FullStack' https://elixircl.github.io/elixir-fullstack/#_sobre_el_autor
+
+- [[[aws]]] The Information Lab. 'Qué es AWS y para qué sirve' https://www.theinformationlab.es/blog/que-es-amazon-web-services-y-para-que-sirve/
+
+- [[[gcp]]] Incentro. '¿Qué es Google Cloud y para qué sirve?' https://www.incentro.com/es-ES/blog/que-es-google-cloud-platform
+
+- [[[microsoftazure]]] Conzultek. 'Microsoft Azure: qué es, cómo funciona y cómo ayuda en su empresa' https://blog.conzultek.com/microsoft-azure-que-es-como-funciona-como-ayuda-a-las-empresas
+
+- [[[onpremise]]] UDS Enterprise. 'Infraestructura On-Premise: Control total en las instalaciones de tu empresa' https://udsenterprise.com/infraestructura-on-premise-control-instalaciones-empresa/#:~:text=La%20infraestructura%20on%20premise%2C%20o,servicios%20externos%20en%20la%20nube.
+
+- [[[multicloud]]] Red Hat. '¿Qué es multicloud?' https://www.redhat.com/es/topics/cloud-computing/what-is-multicloud
+
+- [[[databases]]] Pandorafms Tech Blog. 'Tipos de bases de datos y las mejores bases de datos' https://pandorafms.com/blog/es/tipos-de-bases-de-datos-y-las-mejores-bases-de-datos/#:~:text=Idioma-,Mejores%20bases%20de%20datos%20comerciales,suele%20ser%20la%20mejor%20opci%C3%B3n.
+
+- [[[backend]]] daily.dev. 'Top 10 Backend Frameworks 2024' https://daily.dev/es/blog/top-10-backend-frameworks-2024
+
+- [[[frontend]]] Richestsoft. '10 Most popular frontend frameworks 2024' https://richestsoft.com/es/blog/10-most-popular-front-end-frameworks/#:~:text=Los%2010%20frameworks%20front%2Dend%20m%C3%A1s%20populares%20en%202024%20incluyen,js%2C%20Ember.
+
+
+

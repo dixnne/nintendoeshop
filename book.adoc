@@ -70,10 +70,6 @@ include::book/copyrights.adoc[]
 
 include::book/authors.adoc[]
 
-include::book/dedication.adoc[]
-
-include::book/foreword.adoc[]
-
 include::book/preface.adoc[]
 
 include::book/abstract.adoc[]
@@ -84,8 +80,6 @@ endif::[]
 
 include::book/chapters.adoc[]
 
-include::book/appendices.adoc[]
-
 include::book/glossary.adoc[]
 
 include::book/bibliography.adoc[]
@@ -94,6 +88,3 @@ ifdef::backend-pdf[]
 include::book/index.adoc[]
 endif::[]
 
-include::book/afterword.adoc[]
-
-include::book/colophon.adoc[]

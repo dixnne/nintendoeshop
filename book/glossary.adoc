@@ -5,5 +5,50 @@ A glossary, also known as a vocabulary or clavis, is an alphabetical list of ter
 
 [glossary]
 
-class::
-  In object-oriented programming, a class is a template definition of the methods and variables in a particular kind of object.
+API:: 
+  Interfaz de Programación de Aplicaciones. Un conjunto de definiciones y protocolos que permiten la comunicación entre diferentes sistemas o aplicaciones.
+
+Base de Datos:: 
+  Sistema organizado para almacenar, gestionar y recuperar datos. En el contexto de la eShop, almacena información sobre usuarios, productos, transacciones, etc.
+
+DLC:: 
+  Contenido Descargable. Contenido adicional que se puede descargar para un juego existente, como nuevas misiones, personajes o expansiones.
+
+E-commerce:: 
+  Comercio Electrónico. La compra y venta de bienes o servicios a través de Internet. La Nintendo eShop es una plataforma de e-commerce en la industria de videojuegos.
+
+Frontend:: 
+  Parte del sistema que interactúa directamente con los usuarios, incluyendo la interfaz de usuario, el diseño y la experiencia del usuario (UX).
+
+Backend:: 
+  Parte del sistema que maneja la lógica del negocio, la base de datos y la comunicación con el frontend. No es visible para los usuarios finales.
+
+Persona:: 
+  Perfil ficticio que representa a un usuario típico de un producto o sistema, utilizado para guiar el diseño y la toma de decisiones en el desarrollo del producto.
+
+Reseña:: 
+  Comentario o crítica que un usuario deja sobre un producto, generalmente con una calificación, que puede influir en la decisión de compra de otros usuarios.
+
+Suscripción:: 
+  Modelo de pago en el que los usuarios pagan una tarifa periódica (mensual o anual) para acceder a un servicio o contenido exclusivo.
+
+Transacción:: 
+  Proceso de compra o intercambio de bienes o servicios. En la eShop, se refiere a la compra de juegos y contenido.
+
+Usuario:: 
+  Persona que interactúa con la plataforma eShop, ya sea comprando productos, dejando reseñas o gestionando su cuenta.
+
+UI:: 
+  Interfaz de Usuario. El espacio donde las interacciones del usuario tienen lugar, incluyendo todos los elementos visuales que los usuarios ven y utilizan.
+
+UX:: 
+  Experiencia del Usuario. El sentimiento y la experiencia general que un usuario tiene al interactuar con un sistema o producto, incluyendo facilidad de uso y satisfacción.
+
+Método de Pago:: 
+  Diferentes formas que los usuarios pueden utilizar para realizar pagos en la plataforma, como tarjetas de crédito, débito y monederos electrónicos.
+
+Stock:: 
+  Cantidad de productos disponibles para la venta. En el caso de productos digitales, generalmente se considera ilimitado.
+
+Marketplace:: 
+  Plataforma en línea donde múltiples vendedores pueden ofrecer sus productos o servicios a los compradores. La Nintendo eShop funciona como un marketplace para juegos y contenido digital de Nintendo.

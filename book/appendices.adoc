@@ -1,5 +1,0 @@
-:imagesdir: book/
-
-[appendix]
-:imagesdir: appendices/_example/images/
-include::appendices/_example/appendix.adoc[]
