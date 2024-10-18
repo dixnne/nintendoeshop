@@ -9,56 +9,56 @@ El sistema **Nintendo eShop** es una plataforma de comercio electrónico diseña
 El sistema **Nintendo eShop** no es un servicio de distribución física de videojuegos, ni una plataforma de juego en línea. No proporciona juegos en formato físico (como cartuchos o discos) y no incluye la posibilidad de jugar directamente en la plataforma. Además, no es un sistema de redes sociales, aunque puede incluir interacciones básicas de comentarios y reseñas entre usuarios. Tampoco es un sistema de soporte técnico para problemas de hardware relacionados con las consolas de Nintendo.
 
 === ¿Qué hace el sistema?
-- **Compra y descarga**: Permite a los usuarios comprar y descargar juegos digitales y contenido adicional directamente en su consola Nintendo.
-- **Gestión de cuentas**: Proporciona a los usuarios la capacidad de gestionar su perfil, historial de compras, y detalles de suscripción.
-- **Ofertas y promociones**: Ofrece descuentos y promociones en juegos, DLCs y suscripciones.
-- **Reseñas y recomendaciones**: Permite a los usuarios dejar reseñas sobre los juegos que han adquirido y proporciona recomendaciones personalizadas basadas en el historial de compras y preferencias.
-- **Métodos de pago**: Integra múltiples opciones de pago para facilitar la compra, incluyendo tarjetas de crédito, débito y monederos electrónicos.
+* **Compra y descarga**: Permite a los usuarios comprar y descargar juegos digitales y contenido adicional directamente en su consola Nintendo.
+* **Gestión de cuentas**: Proporciona a los usuarios la capacidad de gestionar su perfil, historial de compras, y detalles de suscripción.
+* **Ofertas y promociones**: Ofrece descuentos y promociones en juegos, DLCs y suscripciones.
+* **Reseñas y recomendaciones**: Permite a los usuarios dejar reseñas sobre los juegos que han adquirido y proporciona recomendaciones personalizadas basadas en el historial de compras y preferencias.
+* **Métodos de pago**: Integra múltiples opciones de pago para facilitar la compra, incluyendo tarjetas de crédito, débito y monederos electrónicos.
 
 === ¿Qué no hace el sistema?
-- **No proporciona soporte técnico**: El sistema no ofrece asistencia técnica directa para problemas de hardware o software de las consolas Nintendo.
-- **No ofrece juegos físicos**: No vende juegos en formato físico, ni permite el canje de códigos de juegos físicos.
-- **No incluye juegos de otras plataformas**: La eShop está limitada a juegos y contenido desarrollado y distribuido por Nintendo, por lo que no incluye títulos de otras compañías o plataformas.
-- **No permite la comunicación directa entre usuarios**: Aunque puede incluir reseñas y comentarios, no permite la mensajería o comunicación en tiempo real entre usuarios dentro de la plataforma.
-- **No proporciona servicios de streaming de juegos**: La eShop no ofrece la opción de jugar juegos en streaming, ya que todos los juegos deben ser descargados en la consola para su uso.
+* **No proporciona soporte técnico**: El sistema no ofrece asistencia técnica directa para problemas de hardware o software de las consolas Nintendo.
+* **No ofrece juegos físicos**: No vende juegos en formato físico, ni permite el canje de códigos de juegos físicos.
+* **No incluye juegos de otras plataformas**: La eShop está limitada a juegos y contenido desarrollado y distribuido por Nintendo, por lo que no incluye títulos de otras compañías o plataformas.
+* **No permite la comunicación directa entre usuarios**: Aunque puede incluir reseñas y comentarios, no permite la mensajería o comunicación en tiempo real entre usuarios dentro de la plataforma.
+* **No proporciona servicios de streaming de juegos**: La eShop no ofrece la opción de jugar juegos en streaming, ya que todos los juegos deben ser descargados en la consola para su uso.
 
 === Personas
 
 ==== Persona Positiva
 
-**Nombre: Alex Rodríguez**
-- **Edad**: 25 años
-- **Ocupación**: Estudiante universitario de diseño gráfico
-- **Ubicación**: Ciudad de México, México
-- **Objetivos**:
-  - Quiere comprar y jugar a los últimos lanzamientos de juegos de Nintendo para disfrutar en su tiempo libre y compartir experiencias con amigos.
-  - Busca descuentos y promociones en juegos digitales.
-  - Está interesado en explorar contenido adicional, como DLCs y complementos para los juegos que ya posee.
-- **Comportamiento**:
-  - Activo en redes sociales, sigue a desarrolladores y comunidades de videojuegos.
-  - Participa en foros y grupos de discusión sobre videojuegos.
-  - Compara precios en diferentes plataformas antes de realizar una compra.
-- **Motivaciones**:
-  - Valora la calidad y la innovación en los videojuegos.
-  - Prefiere adquirir juegos digitales por la comodidad y la rapidez de acceso.
-  - Busca una experiencia de usuario fluida y atractiva en la plataforma de compra.
+===== Nombre: Alex Rodríguez
+* **Edad**: 25 años
+* **Ocupación**: Estudiante universitario de diseño gráfico
+* **Ubicación**: Ciudad de México, México
+* **Objetivos**:
+  ** Quiere comprar y jugar a los últimos lanzamientos de juegos de Nintendo para disfrutar en su tiempo libre y compartir experiencias con amigos.
+  ** Busca descuentos y promociones en juegos digitales.
+  ** Está interesado en explorar contenido adicional, como DLCs y complementos para los juegos que ya posee.
+* **Comportamiento**:
+  ** Activo en redes sociales, sigue a desarrolladores y comunidades de videojuegos.
+  ** Participa en foros y grupos de discusión sobre videojuegos.
+  ** Compara precios en diferentes plataformas antes de realizar una compra.
+* **Motivaciones**:
+  ** Valora la calidad y la innovación en los videojuegos.
+  ** Prefiere adquirir juegos digitales por la comodidad y la rapidez de acceso.
+  ** Busca una experiencia de usuario fluida y atractiva en la plataforma de compra.
 
 ==== Persona Negativa
 
-**Nombre: Laura Sánchez**
-- **Edad**: 42 años
-- **Ocupación**: Profesora de educación primaria
-- **Ubicación**: Buenos Aires, Argentina
-- **Objetivos**:
-  - Busca opciones de entretenimiento para sus hijos, pero no está interesada en juegos para sí misma.
-  - Prefiere juegos gratuitos o de bajo costo.
-- **Comportamiento**:
-  - No utiliza redes sociales y prefiere el contacto cara a cara para resolver problemas.
-  - No tiene experiencia en compras en línea y se siente incómoda realizando transacciones digitales.
-- **Motivaciones**:
-  - Le preocupa la seguridad de las compras en línea.
-  - No está dispuesta a pagar por juegos digitales, prefiriendo los productos físicos.
-  - Valora las recomendaciones de amigos y familiares, pero desconfía de las ofertas en línea.
+===== Nombre: Laura Sánchez
+* **Edad**: 42 años
+* **Ocupación**: Profesora de educación primaria
+* **Ubicación**: Buenos Aires, Argentina
+* **Objetivos**:
+  ** Busca opciones de entretenimiento para sus hijos, pero no está interesada en juegos para sí misma.
+  ** Prefiere juegos gratuitos o de bajo costo.
+* **Comportamiento**:
+  ** No utiliza redes sociales y prefiere el contacto cara a cara para resolver problemas.
+  ** No tiene experiencia en compras en línea y se siente incómoda realizando transacciones digitales.
+* **Motivaciones**:
+  ** Le preocupa la seguridad de las compras en línea.
+  ** No está dispuesta a pagar por juegos digitales, prefiriendo los productos físicos.
+  ** Valora las recomendaciones de amigos y familiares, pero desconfía de las ofertas en línea.
 
 === Diagramas de Arquitectura
 
@@ -143,46 +143,46 @@ El entorno incluye la ejecución de aplicaciones de frontend y backend, almacena
 ==== Problema
 
 El desafío es seleccionar un proveedor de servidor y una arquitectura que:
-- **Escale fácilmente** para manejar grandes volúmenes de usuarios y transacciones.
-- Ofrezca **alta disponibilidad** y recuperación rápida ante fallos.
-- Sea capaz de soportar tanto la **infraestructura backend** como el **frontend**.
-- Ofrezca un **coste eficiente** en diferentes escenarios de tráfico: bajo, normal, y crítico.
-- **Integre herramientas de DevOps** como CI/CD y permita automatización en los despliegues.
+* **Escale fácilmente** para manejar grandes volúmenes de usuarios y transacciones.
+* Ofrezca **alta disponibilidad** y recuperación rápida ante fallos.
+* Sea capaz de soportar tanto la **infraestructura backend** como el **frontend**.
+* Ofrezca un **coste eficiente** en diferentes escenarios de tráfico: bajo, normal, y crítico.
+* **Integre herramientas de DevOps** como CI/CD y permita automatización en los despliegues.
 
 Se evaluaron varias opciones de infraestructura de servidor, considerando sus capacidades, costos, y la facilidad de integración con las tecnologías seleccionadas.
 
 ==== Opciones Evaluadas
 
 1. **Amazon Web Services (AWS)**:
-  - **Ventajas**:
-    - **Alta escalabilidad** con servicios como EC2 para instancias de computación, RDS para bases de datos relacionales y S3 para almacenamiento de archivos.
-    - Herramientas avanzadas como **Auto Scaling** y **Elastic Load Balancing** para manejar picos de tráfico de forma automática.
-    - **Amplio ecosistema** de servicios complementarios como Lambda (para microservicios serverless), CloudFront (CDN), y Route 53 (gestión de DNS).
-    - **Seguridad avanzada** y cumplimiento de estándares como PCI-DSS, esencial para sistemas de pago.
-    - Gran **comunidad y soporte**, facilitando la resolución de problemas y la integración con herramientas de DevOps.
-  - **Desventajas**:
-    - Complejidad de uso para equipos con poca experiencia en AWS.
-    - Costos que pueden aumentar rápidamente si no se gestionan eficientemente los recursos.
+  * **Ventajas**:
+    ** **Alta escalabilidad** con servicios como EC2 para instancias de computación, RDS para bases de datos relacionales y S3 para almacenamiento de archivos.
+    ** Herramientas avanzadas como **Auto Scaling** y **Elastic Load Balancing** para manejar picos de tráfico de forma automática.
+    ** **Amplio ecosistema** de servicios complementarios como Lambda (para microservicios serverless), CloudFront (CDN), y Route 53 (gestión de DNS).
+    ** **Seguridad avanzada** y cumplimiento de estándares como PCI*DSS, esencial para sistemas de pago.
+    ** Gran **comunidad y soporte**, facilitando la resolución de problemas y la integración con herramientas de DevOps.
+  * **Desventajas**:
+    ** Complejidad de uso para equipos con poca experiencia en AWS.
+    ** Costos que pueden aumentar rápidamente si no se gestionan eficientemente los recursos.
 
 2. **Google Cloud Platform (GCP)**:
-  - **Ventajas**:
-    - Fuerte integración con **herramientas de análisis de datos** y **machine learning**, útiles para futuras expansiones en análisis de comportamiento de usuarios.
-    - Servicios como **Compute Engine** y **Kubernetes Engine** para manejar aplicaciones en contenedores.
-    - **Cloud Spanner** para bases de datos globales escalables, ideal para manejar grandes volúmenes de transacciones.
-    - **Red global rápida** que puede reducir la latencia en aplicaciones de alto tráfico.
-  - **Desventajas**:
-    - Ecosistema algo menos maduro en comparación con AWS, especialmente en términos de servicios secundarios.
-    - Costos ligeramente superiores en algunos servicios de alto rendimiento.
+  * **Ventajas**:
+    ** Fuerte integración con **herramientas de análisis de datos** y **machine learning**, útiles para futuras expansiones en análisis de comportamiento de usuarios.
+    ** Servicios como **Compute Engine** y **Kubernetes Engine** para manejar aplicaciones en contenedores.
+    ** **Cloud Spanner** para bases de datos globales escalables, ideal para manejar grandes volúmenes de transacciones.
+    ** **Red global rápida** que puede reducir la latencia en aplicaciones de alto tráfico.
+  * **Desventajas**:
+    ** Ecosistema algo menos maduro en comparación con AWS, especialmente en términos de servicios secundarios.
+    ** Costos ligeramente superiores en algunos servicios de alto rendimiento.
 
 3. **Microsoft Azure**:
-  - **Ventajas**:
-    - Excelente opción para organizaciones que ya utilizan productos de Microsoft, como **Active Directory** o **Office 365**.
-    - Herramientas robustas de integración como **Azure DevOps** para CI/CD.
-    - Soporte para **Azure Functions** (serverless) y **Kubernetes Services**, similares a los ofrecidos por AWS y GCP.
-    - **Opciones flexibles de pago** y soporte a largo plazo.
-  - **Desventajas**:
-    - Curva de aprendizaje elevada para equipos no familiarizados con el ecosistema de Microsoft.
-    - Rendimiento de base de datos no tan optimizado como AWS en casos de tráfico extremadamente alto.
+  * **Ventajas**:
+    ** Excelente opción para organizaciones que ya utilizan productos de Microsoft, como **Active Directory** o **Office 365**.
+    ** Herramientas robustas de integración como **Azure DevOps** para CI/CD.
+    ** Soporte para **Azure Functions** (serverless) y **Kubernetes Services**, similares a los ofrecidos por AWS y GCP.
+    ** **Opciones flexibles de pago** y soporte a largo plazo.
+  * **Desventajas**:
+    ** Curva de aprendizaje elevada para equipos no familiarizados con el ecosistema de Microsoft.
+    ** Rendimiento de base de datos no tan optimizado como AWS en casos de tráfico extremadamente alto.
 
 ==== Decisión
 
@@ -194,91 +194,91 @@ Se ha decidido utilizar **Amazon Web Services (AWS)** como la plataforma de serv
 
 3. **Herramientas DevOps**: AWS proporciona una serie de servicios integrados para la **automatización de despliegues** y **gestión de infraestructura como código** a través de **AWS CodePipeline** y **CloudFormation**, lo que facilita la adopción de prácticas de DevOps y asegura un desarrollo ágil y controlado.
 
-4. **Seguridad y Cumplimiento**: AWS tiene un historial comprobado de conformidad con regulaciones como **PCI-DSS**, lo que es crítico para la integración de sistemas de pago seguros y la protección de los datos de los usuarios.
+4. **Seguridad y Cumplimiento**: AWS tiene un historial comprobado de conformidad con regulaciones como **PCI*DSS**, lo que es crítico para la integración de sistemas de pago seguros y la protección de los datos de los usuarios.
 
 5. **Soporte Global y Fiabilidad**: Con una **red de distribución global** a través de regiones y zonas de disponibilidad, AWS ofrece redundancia y capacidad de recuperación ante desastres, garantizando que el sistema esté siempre disponible para los usuarios a nivel global.
 
 ==== Consecuencias
 
-- **Positivas**:
-  - La plataforma será fácilmente escalable para manejar picos de tráfico, reduciendo la posibilidad de tiempo de inactividad.
-  - La amplia gama de herramientas AWS permitirá una integración sencilla con otras tecnologías y una operación eficiente del sistema.
-  - La alta disponibilidad y la capacidad de recuperación ante fallos garantizan que los servicios estén disponibles de manera continua, minimizando el riesgo de interrupciones.
+* **Positivas**:
+  ** La plataforma será fácilmente escalable para manejar picos de tráfico, reduciendo la posibilidad de tiempo de inactividad.
+  ** La amplia gama de herramientas AWS permitirá una integración sencilla con otras tecnologías y una operación eficiente del sistema.
+  ** La alta disponibilidad y la capacidad de recuperación ante fallos garantizan que los servicios estén disponibles de manera continua, minimizando el riesgo de interrupciones.
 
-- **Negativas**:
-  - La gestión de costos en AWS puede ser compleja y podría generar sobrecostos si no se gestionan eficientemente los recursos asignados.
-  - AWS puede ser desafiante para equipos con poca experiencia en sus herramientas, lo que requerirá una capacitación adicional.
+* **Negativas**:
+  ** La gestión de costos en AWS puede ser compleja y podría generar sobrecostos si no se gestionan eficientemente los recursos asignados.
+  ** AWS puede ser desafiante para equipos con poca experiencia en sus herramientas, lo que requerirá una capacitación adicional.
 
 === Amazon Web Services (AWS)
 AWS es una de las soluciones más populares y robustas para grandes proyectos de Ecommerce debido a su capacidad de escalado, su gran variedad de servicios y su infraestructura global.
 
-- **Ventajas**:
-  - **Escalabilidad automática**: Servicios como **EC2** y **Elastic Load Balancing** permiten que la plataforma escale automáticamente para manejar aumentos repentinos en el tráfico.
-  - **Disponibilidad global**: AWS ofrece data centers en todo el mundo, lo que permite implementar una arquitectura distribuida geográficamente, reduciendo la latencia y mejorando la disponibilidad.
-  - **Seguridad avanzada**: AWS incluye protección contra ataques DDoS, cifrado de datos, y políticas de seguridad estrictas.
-  - **Integraciones nativas**: Herramientas como **AWS Lambda** permiten construir microservicios serverless, y con **AWS RDS** puedes gestionar bases de datos de manera eficiente.
+* **Ventajas**:
+  ** **Escalabilidad automática**: Servicios como **EC2** y **Elastic Load Balancing** permiten que la plataforma escale automáticamente para manejar aumentos repentinos en el tráfico.
+  ** **Disponibilidad global**: AWS ofrece data centers en todo el mundo, lo que permite implementar una arquitectura distribuida geográficamente, reduciendo la latencia y mejorando la disponibilidad.
+  ** **Seguridad avanzada**: AWS incluye protección contra ataques DDoS, cifrado de datos, y políticas de seguridad estrictas.
+  ** **Integraciones nativas**: Herramientas como **AWS Lambda** permiten construir microservicios serverless, y con **AWS RDS** puedes gestionar bases de datos de manera eficiente.
 
-- **Desventajas**:
-  - **Costo**: Aunque ofrece flexibilidad en el pago por uso, los costos de AWS pueden aumentar rápidamente con grandes volúmenes de tráfico y transacciones.
-  - **Curva de aprendizaje**: La administración de AWS puede ser compleja, especialmente si no se cuenta con personal experimentado.
+* **Desventajas**:
+  ** **Costo**: Aunque ofrece flexibilidad en el pago por uso, los costos de AWS pueden aumentar rápidamente con grandes volúmenes de tráfico y transacciones.
+  ** **Curva de aprendizaje**: La administración de AWS puede ser compleja, especialmente si no se cuenta con personal experimentado.
 
-- **Conclusión**: AWS es ideal para proyectos con un presupuesto alto, donde la escalabilidad y la fiabilidad son críticas. Su capacidad para manejar grandes volúmenes de transacciones lo convierte en una opción sólida para la Nintendo eShop.
+* **Conclusión**: AWS es ideal para proyectos con un presupuesto alto, donde la escalabilidad y la fiabilidad son críticas. Su capacidad para manejar grandes volúmenes de transacciones lo convierte en una opción sólida para la Nintendo eShop.
 
 === Google Cloud Platform (GCP)
 GCP es otra opción líder en infraestructura en la nube, con un enfoque en big data, inteligencia artificial y un ecosistema de servicios altamente integrados.
 
-- **Ventajas**:
-  - **Rendimiento optimizado**: Google Cloud ofrece latencias muy bajas y una red global privada, lo que es ventajoso para ofrecer tiempos de respuesta rápidos.
-  - **Machine learning e IA**: GCP tiene servicios avanzados de inteligencia artificial que pueden integrarse para ofrecer recomendaciones personalizadas a los usuarios de la eShop.
-  - **Escalabilidad**: Al igual que AWS, GCP permite escalar automáticamente los servicios con **Google Kubernetes Engine (GKE)** y **Compute Engine**.
-  - **Precios competitivos**: Ofrece precios más bajos en algunos casos, con una política de descuentos por uso continuo que puede ser útil para operaciones a largo plazo.
+* **Ventajas**:
+  ** **Rendimiento optimizado**: Google Cloud ofrece latencias muy bajas y una red global privada, lo que es ventajoso para ofrecer tiempos de respuesta rápidos.
+  ** **Machine learning e IA**: GCP tiene servicios avanzados de inteligencia artificial que pueden integrarse para ofrecer recomendaciones personalizadas a los usuarios de la eShop.
+  ** **Escalabilidad**: Al igual que AWS, GCP permite escalar automáticamente los servicios con **Google Kubernetes Engine (GKE)** y **Compute Engine**.
+  ** **Precios competitivos**: Ofrece precios más bajos en algunos casos, con una política de descuentos por uso continuo que puede ser útil para operaciones a largo plazo.
 
-- **Desventajas**:
-  - **Ecosistema limitado**: Aunque potente, el ecosistema de herramientas y servicios integrados es menos diverso en comparación con AWS.
-  - **Adopción corporativa más baja**: GCP es menos común entre empresas tradicionales, lo que podría dificultar la contratación de expertos con experiencia directa.
+* **Desventajas**:
+  ** **Ecosistema limitado**: Aunque potente, el ecosistema de herramientas y servicios integrados es menos diverso en comparación con AWS.
+  ** **Adopción corporativa más baja**: GCP es menos común entre empresas tradicionales, lo que podría dificultar la contratación de expertos con experiencia directa.
 
-- **Conclusión**: GCP es una gran opción si se quiere aprovechar el análisis de datos y machine learning para mejorar la experiencia de los usuarios. También es ideal para proyectos que requieren alta disponibilidad global con costos competitivos.
+* **Conclusión**: GCP es una gran opción si se quiere aprovechar el análisis de datos y machine learning para mejorar la experiencia de los usuarios. También es ideal para proyectos que requieren alta disponibilidad global con costos competitivos.
 
 === Microsoft Azure
 Azure es otra plataforma en la nube confiable, especialmente para empresas que ya tienen servicios basados en tecnologías Microsoft, como .NET o Azure Active Directory.
 
-- **Ventajas**:
-  - **Integración empresarial**: Azure es una excelente opción si ya se utilizan productos de Microsoft, ofreciendo una integración fluida con servicios como **Active Directory** y herramientas empresariales de Microsoft.
-  - **Escalabilidad y flexibilidad**: Al igual que AWS y GCP, Azure proporciona autoescalado con **Azure VM Scale Sets** y **Azure Kubernetes Service (AKS)**.
-  - **Red global**: Con una infraestructura global sólida, Azure garantiza baja latencia para usuarios distribuidos en diferentes regiones.
-  - **Opciones híbridas**: Azure se destaca en ofrecer soluciones híbridas, lo que permite combinar servidores en la nube y on-premise para empresas que necesitan un enfoque mixto.
+* **Ventajas**:
+  ** **Integración empresarial**: Azure es una excelente opción si ya se utilizan productos de Microsoft, ofreciendo una integración fluida con servicios como **Active Directory** y herramientas empresariales de Microsoft.
+  ** **Escalabilidad y flexibilidad**: Al igual que AWS y GCP, Azure proporciona autoescalado con **Azure VM Scale Sets** y **Azure Kubernetes Service (AKS)**.
+  ** **Red global**: Con una infraestructura global sólida, Azure garantiza baja latencia para usuarios distribuidos en diferentes regiones.
+  ** **Opciones híbridas**: Azure se destaca en ofrecer soluciones híbridas, lo que permite combinar servidores en la nube y on*premise para empresas que necesitan un enfoque mixto.
 
-- **Desventajas**:
-  - **Complejidad en costos**: La estructura de precios de Azure puede ser difícil de prever, lo que requiere una planificación cuidadosa para evitar sobrecostos.
-  - **Menor popularidad**: Aunque Azure es popular, todavía está detrás de AWS en términos de cuota de mercado y soporte de comunidad.
+* **Desventajas**:
+  ** **Complejidad en costos**: La estructura de precios de Azure puede ser difícil de prever, lo que requiere una planificación cuidadosa para evitar sobrecostos.
+  ** **Menor popularidad**: Aunque Azure es popular, todavía está detrás de AWS en términos de cuota de mercado y soporte de comunidad.
 
-- **Conclusión**: Azure es ideal si ya estás utilizando o planeas utilizar otros servicios de Microsoft, y si deseas flexibilidad en la integración con sistemas on-premise. Es una opción sólida para el Ecommerce a gran escala.
+* **Conclusión**: Azure es ideal si ya estás utilizando o planeas utilizar otros servicios de Microsoft, y si deseas flexibilidad en la integración con sistemas on*premise. Es una opción sólida para el Ecommerce a gran escala.
 
-=== Opciones de Infraestructura On-premise
-Aunque el uso de soluciones en la nube es el enfoque más común hoy en día, también es posible considerar servidores on-premise (propios o alquilados) si se requiere un control total sobre la infraestructura.
+=== Opciones de Infraestructura On*premise
+Aunque el uso de soluciones en la nube es el enfoque más común hoy en día, también es posible considerar servidores on*premise (propios o alquilados) si se requiere un control total sobre la infraestructura.
 
-- **Ventajas**:
-  - **Control completo**: Al gestionar directamente la infraestructura, la empresa tiene un control total sobre las configuraciones, políticas de seguridad y la optimización del rendimiento.
-  - **Costos fijos**: Una vez que se realiza la inversión inicial, los costos son más predecibles a largo plazo, aunque pueden aumentar en mantenimiento.
-  - **Personalización**: Puedes ajustar cada aspecto de la infraestructura a las necesidades específicas del proyecto sin depender de proveedores externos.
+* **Ventajas**:
+  ** **Control completo**: Al gestionar directamente la infraestructura, la empresa tiene un control total sobre las configuraciones, políticas de seguridad y la optimización del rendimiento.
+  ** **Costos fijos**: Una vez que se realiza la inversión inicial, los costos son más predecibles a largo plazo, aunque pueden aumentar en mantenimiento.
+  ** **Personalización**: Puedes ajustar cada aspecto de la infraestructura a las necesidades específicas del proyecto sin depender de proveedores externos.
 
-- **Desventajas**:
-  - **Altos costos iniciales**: La inversión en hardware, espacio físico, y recursos humanos es significativa, lo que hace que sea una opción más costosa a corto plazo.
-  - **Escalabilidad limitada**: A diferencia de la nube, escalar una infraestructura on-premise puede ser un proceso más lento y costoso.
-  - **Mantenimiento continuo**: Se necesita un equipo interno especializado para gestionar y mantener los servidores.
+* **Desventajas**:
+  ** **Altos costos iniciales**: La inversión en hardware, espacio físico, y recursos humanos es significativa, lo que hace que sea una opción más costosa a corto plazo.
+  ** **Escalabilidad limitada**: A diferencia de la nube, escalar una infraestructura on*premise puede ser un proceso más lento y costoso.
+  ** **Mantenimiento continuo**: Se necesita un equipo interno especializado para gestionar y mantener los servidores.
 
-- **Conclusión**: Los servidores on-premise solo son recomendables si se necesita un control extremo sobre la infraestructura o si la empresa ya tiene una infraestructura física sólida. No es la opción más flexible ni escalable para un Ecommerce que espera grandes volúmenes de transacciones.
+* **Conclusión**: Los servidores on*premise solo son recomendables si se necesita un control extremo sobre la infraestructura o si la empresa ya tiene una infraestructura física sólida. No es la opción más flexible ni escalable para un Ecommerce que espera grandes volúmenes de transacciones.
 
-=== Soluciones Híbridas (Multi-cloud)
-Una tendencia creciente es utilizar una estrategia **multi-cloud** o **híbrida**, combinando varios proveedores de nube o una mezcla de infraestructura on-premise con servicios en la nube.
+=== Soluciones Híbridas (Multi*cloud)
+Una tendencia creciente es utilizar una estrategia **multi*cloud** o **híbrida**, combinando varios proveedores de nube o una mezcla de infraestructura on*premise con servicios en la nube.
 
-- **Ventajas**:
-  - **Resiliencia**: Al distribuir las cargas de trabajo entre diferentes proveedores, se reduce el riesgo de una caída total del sistema.
-  - **Optimización de costos**: Se pueden aprovechar los mejores precios de cada proveedor y distribuir las cargas según sus fortalezas.
-  - **Flexibilidad**: La empresa no se "encierra" con un solo proveedor, lo que permite cambiar de estrategia si alguna plataforma ya no es adecuada.
+* **Ventajas**:
+  ** **Resiliencia**: Al distribuir las cargas de trabajo entre diferentes proveedores, se reduce el riesgo de una caída total del sistema.
+  ** **Optimización de costos**: Se pueden aprovechar los mejores precios de cada proveedor y distribuir las cargas según sus fortalezas.
+  ** **Flexibilidad**: La empresa no se "encierra" con un solo proveedor, lo que permite cambiar de estrategia si alguna plataforma ya no es adecuada.
 
-- **Desventajas**:
-  - **Complejidad de gestión**: Manejar múltiples entornos puede aumentar la complejidad técnica y requerir mayores recursos humanos y de gestión.
-  - **Sinergias limitadas**: Aunque las soluciones multi-cloud ofrecen flexibilidad, no todas las herramientas y servicios están optimizados para funcionar juntos entre diferentes proveedores.
+* **Desventajas**:
+  ** **Complejidad de gestión**: Manejar múltiples entornos puede aumentar la complejidad técnica y requerir mayores recursos humanos y de gestión.
+  ** **Sinergias limitadas**: Aunque las soluciones multi*cloud ofrecen flexibilidad, no todas las herramientas y servicios están optimizados para funcionar juntos entre diferentes proveedores.
 
 

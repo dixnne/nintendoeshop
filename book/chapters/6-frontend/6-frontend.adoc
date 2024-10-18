@@ -14,52 +14,52 @@ El frontend del proyecto **Nintendo eShop** es una plataforma que permite a los 
 ==== Problema
 
 El principal desafío es seleccionar una tecnología que:
-- Proporcione una **experiencia de usuario rápida** y **optimizada**.
-- Garantice la **escalabilidad** para soportar millones de usuarios.
-- Sea fácil de mantener y permita la **adición de nuevas características** de forma ágil.
-- Permita una integración fluida con el backend basado en **Node.js y Nest.js**.
-- Proporcione **compatibilidad multiplataforma**, especialmente en dispositivos móviles y web.
+* Proporcione una **experiencia de usuario rápida** y **optimizada**.
+* Garantice la **escalabilidad** para soportar millones de usuarios.
+* Sea fácil de mantener y permita la **adición de nuevas características** de forma ágil.
+* Permita una integración fluida con el backend basado en **Node.js y Nest.js**.
+* Proporcione **compatibilidad multiplataforma**, especialmente en dispositivos móviles y web.
 
 Se evaluaron varias opciones para la tecnología frontend, considerando su capacidad para abordar estos desafíos.
 
 ==== Opciones Evaluadas
 
 1. **React.js** con **Next.js**:
-    - React es una biblioteca de JavaScript popular para construir interfaces de usuario dinámicas y Next.js es un framework para aplicaciones web estáticas y dinámicas.
-    - **Ventajas**:
-        - **SSR (Server-Side Rendering)**: Next.js proporciona SSR, lo que mejora la velocidad de carga y optimiza el SEO.
-        - **Componentes reutilizables**: El uso de componentes en React facilita la modularidad y la reutilización de código.
-        - **Amplio ecosistema**: Gran cantidad de herramientas, bibliotecas y soporte de la comunidad.
-        - **Escalabilidad**: React y Next.js permiten manejar interfaces complejas y de alto tráfico.
-    - **Desventajas**:
-        - Mayor curva de aprendizaje para desarrolladores que no estén familiarizados con React.
-        - Requiere un poco más de configuración comparado con frameworks más simples.
+    * React es una biblioteca de JavaScript popular para construir interfaces de usuario dinámicas y Next.js es un framework para aplicaciones web estáticas y dinámicas.
+    * **Ventajas**:
+        ** **SSR (Server*Side Rendering)**: Next.js proporciona SSR, lo que mejora la velocidad de carga y optimiza el SEO.
+        ** **Componentes reutilizables**: El uso de componentes en React facilita la modularidad y la reutilización de código.
+        ** **Amplio ecosistema**: Gran cantidad de herramientas, bibliotecas y soporte de la comunidad.
+        ** **Escalabilidad**: React y Next.js permiten manejar interfaces complejas y de alto tráfico.
+    * **Desventajas**:
+        ** Mayor curva de aprendizaje para desarrolladores que no estén familiarizados con React.
+        ** Requiere un poco más de configuración comparado con frameworks más simples.
 
 2. **Vue.js** con **Nuxt.js**:
-    - Vue es otro framework popular de JavaScript, y Nuxt.js ofrece beneficios similares a Next.js en el ecosistema Vue.
-    - **Ventajas**:
-        - Curva de aprendizaje más amigable para desarrolladores nuevos.
-        - Soporta SSR, optimizando SEO y tiempos de carga.
-        - **Flexibilidad** para construir interfaces reactivas y escalables.
-    - **Desventajas**:
-        - Comunidad y ecosistema algo más pequeños que los de React.
-        - Menos herramientas avanzadas para grandes volúmenes de usuarios.
+    * Vue es otro framework popular de JavaScript, y Nuxt.js ofrece beneficios similares a Next.js en el ecosistema Vue.
+    * **Ventajas**:
+        ** Curva de aprendizaje más amigable para desarrolladores nuevos.
+        ** Soporta SSR, optimizando SEO y tiempos de carga.
+        ** **Flexibilidad** para construir interfaces reactivas y escalables.
+    * **Desventajas**:
+        ** Comunidad y ecosistema algo más pequeños que los de React.
+        ** Menos herramientas avanzadas para grandes volúmenes de usuarios.
 
 3. **Angular**:
-    - Angular es un framework completo para construir aplicaciones web dinámicas con soporte empresarial.
-    - **Ventajas**:
-        - Gran capacidad para manejar aplicaciones empresariales y grandes.
-        - Ofrece una arquitectura robusta con herramientas integradas como el enrutamiento y la gestión de estado.
-        - Facilita el desarrollo de aplicaciones de gran escala.
-    - **Desventajas**:
-        - Curva de aprendizaje pronunciada debido a su complejidad.
-        - Menor flexibilidad y rendimiento para pequeñas aplicaciones comparado con React y Vue.
+    * Angular es un framework completo para construir aplicaciones web dinámicas con soporte empresarial.
+    * **Ventajas**:
+        ** Gran capacidad para manejar aplicaciones empresariales y grandes.
+        ** Ofrece una arquitectura robusta con herramientas integradas como el enrutamiento y la gestión de estado.
+        ** Facilita el desarrollo de aplicaciones de gran escala.
+    * **Desventajas**:
+        ** Curva de aprendizaje pronunciada debido a su complejidad.
+        ** Menor flexibilidad y rendimiento para pequeñas aplicaciones comparado con React y Vue.
 
 ==== Decisión
 
 Se ha decidido utilizar **React.js** con **Next.js** para el desarrollo del frontend de la plataforma Nintendo eShop. Esta decisión se justifica por las siguientes razones:
 
-1. **Escalabilidad y rendimiento**: React.js es ampliamente utilizado por grandes plataformas de Ecommerce y ha demostrado ser una tecnología confiable para manejar altos volúmenes de usuarios simultáneamente. La capacidad de **Next.js** para ofrecer **Server-Side Rendering (SSR)** y **Static Site Generation (SSG)** optimiza el rendimiento de la página y reduce los tiempos de carga, mejorando la experiencia del usuario.
+1. **Escalabilidad y rendimiento**: React.js es ampliamente utilizado por grandes plataformas de Ecommerce y ha demostrado ser una tecnología confiable para manejar altos volúmenes de usuarios simultáneamente. La capacidad de **Next.js** para ofrecer **Server*Side Rendering (SSR)** y **Static Site Generation (SSG)** optimiza el rendimiento de la página y reduce los tiempos de carga, mejorando la experiencia del usuario.
 
 2. **Modularidad y Mantenibilidad**: La naturaleza basada en componentes de React permite una fácil **modularidad** del código, lo que facilita la implementación y modificación de las distintas secciones de la aplicación (catálogo de productos, carritos de compra, perfiles de usuario, etc.).
 
@@ -73,14 +73,14 @@ Se ha decidido utilizar **React.js** con **Next.js** para el desarrollo del fron
 
 ==== Consecuencias
 
-- **Positivas**:
-    - La arquitectura basada en React y Next.js permitirá que el frontend sea fácilmente escalable, modular y flexible, garantizando un buen rendimiento incluso con millones de usuarios activos.
-    - La capacidad de SSR y la optimización para SEO proporcionarán una **experiencia de usuario rápida** y una mayor visibilidad en los motores de búsqueda.
-    - La integración con el backend basado en Node.js será fluida, reduciendo la complejidad de gestión del proyecto.
+* **Positivas**:
+    ** La arquitectura basada en React y Next.js permitirá que el frontend sea fácilmente escalable, modular y flexible, garantizando un buen rendimiento incluso con millones de usuarios activos.
+    ** La capacidad de SSR y la optimización para SEO proporcionarán una **experiencia de usuario rápida** y una mayor visibilidad en los motores de búsqueda.
+    ** La integración con el backend basado en Node.js será fluida, reduciendo la complejidad de gestión del proyecto.
 
-- **Negativas**:
-    - La curva de aprendizaje de React puede ser un desafío para los desarrolladores que no estén familiarizados con esta tecnología, lo que puede retrasar un poco el inicio del desarrollo.
-    - Requiere una configuración adecuada para manejar adecuadamente la gestión de estado en aplicaciones complejas, lo que puede incrementar ligeramente la complejidad del proyecto.
+* **Negativas**:
+    ** La curva de aprendizaje de React puede ser un desafío para los desarrolladores que no estén familiarizados con esta tecnología, lo que puede retrasar un poco el inicio del desarrollo.
+    ** Requiere una configuración adecuada para manejar adecuadamente la gestión de estado en aplicaciones complejas, lo que puede incrementar ligeramente la complejidad del proyecto.
 
 === Requisitos
 
@@ -94,30 +94,30 @@ Se ha decidido utilizar **React.js** con **Next.js** para el desarrollo del fron
 === Opciones de Frameworks y Bibliotecas
 
 ==== React.js
-- **Descripción**: React es una biblioteca de JavaScript ampliamente utilizada para construir interfaces de usuario rápidas y dinámicas. Es mantenida por Facebook y tiene una gran comunidad y ecosistema.
-- **Ventajas**:
-    - **Componentización**: Permite dividir la interfaz en componentes reutilizables, lo que mejora la mantenibilidad y modularidad.
-    - **Virtual DOM**: Optimiza las actualizaciones del DOM, mejorando el rendimiento en aplicaciones con gran cantidad de datos o interacciones frecuentes.
-    - **Ecosistema Extenso**: Tiene un amplio soporte para herramientas como Redux (para manejar el estado global), Next.js (para renderizado en servidor y optimización SEO), y una variedad de bibliotecas para gestionar formularios, enrutamiento, etc.
-    - **SSR (Server-Side Rendering)**: Con Next.js, React permite el renderizado del lado del servidor para mejorar la velocidad de carga inicial y optimizar SEO.
-    - **Flexibilidad**: Facilita la integración con otras tecnologías, permitiendo escalar la complejidad de la aplicación conforme crezca.
+* **Descripción**: React es una biblioteca de JavaScript ampliamente utilizada para construir interfaces de usuario rápidas y dinámicas. Es mantenida por Facebook y tiene una gran comunidad y ecosistema.
+* **Ventajas**:
+    ** **Componentización**: Permite dividir la interfaz en componentes reutilizables, lo que mejora la mantenibilidad y modularidad.
+    ** **Virtual DOM**: Optimiza las actualizaciones del DOM, mejorando el rendimiento en aplicaciones con gran cantidad de datos o interacciones frecuentes.
+    ** **Ecosistema Extenso**: Tiene un amplio soporte para herramientas como Redux (para manejar el estado global), Next.js (para renderizado en servidor y optimización SEO), y una variedad de bibliotecas para gestionar formularios, enrutamiento, etc.
+    ** **SSR (Server*Side Rendering)**: Con Next.js, React permite el renderizado del lado del servidor para mejorar la velocidad de carga inicial y optimizar SEO.
+    ** **Flexibilidad**: Facilita la integración con otras tecnologías, permitiendo escalar la complejidad de la aplicación conforme crezca.
 
 ==== Vue.js
-- **Descripción**: Vue es un framework progresivo de JavaScript que se enfoca en ser sencillo de integrar en proyectos nuevos o existentes, con un enfoque en la vista (frontend).
-- **Ventajas**:
-    - **Simplicidad y Flexibilidad**: Es fácil de aprender y usar, permitiendo desarrollar rápidamente interfaces interactivas.
-    - **Componentización**: Al igual que React, Vue facilita la creación de componentes reutilizables.
-    - **Rendimiento Ligero**: Es más ligero que otros frameworks y tiene tiempos de carga rápidos.
-    - **SEO-Friendly**: Con herramientas como Nuxt.js, Vue soporta renderizado del lado del servidor para optimización SEO.
-    - **Excelente Documentación y Comunidad**: La curva de aprendizaje es menos pronunciada comparada con React o Angular.
+* **Descripción**: Vue es un framework progresivo de JavaScript que se enfoca en ser sencillo de integrar en proyectos nuevos o existentes, con un enfoque en la vista (frontend).
+* **Ventajas**:
+    ** **Simplicidad y Flexibilidad**: Es fácil de aprender y usar, permitiendo desarrollar rápidamente interfaces interactivas.
+    ** **Componentización**: Al igual que React, Vue facilita la creación de componentes reutilizables.
+    ** **Rendimiento Ligero**: Es más ligero que otros frameworks y tiene tiempos de carga rápidos.
+    ** **SEO*Friendly**: Con herramientas como Nuxt.js, Vue soporta renderizado del lado del servidor para optimización SEO.
+    ** **Excelente Documentación y Comunidad**: La curva de aprendizaje es menos pronunciada comparada con React o Angular.
 
 ==== Angular
-- **Descripción**: Angular es un framework desarrollado y mantenido por Google, ideal para aplicaciones empresariales robustas. Ofrece una estructura completa para el desarrollo de aplicaciones web escalables.
-- **Ventajas**:
-    - **Framework Completo**: Angular viene con muchas funcionalidades preconstruidas como inyección de dependencias, validaciones de formularios y enrutamiento avanzado.
-    - **Typescript**: Angular utiliza Typescript, lo que añade tipado estático y mejora la mantenibilidad del código en proyectos grandes.
-    - **Soporte Corporativo**: Es una excelente opción para proyectos empresariales a gran escala.
-    - **Componentización y Modularidad**: Angular también se basa en componentes, lo que facilita la reutilización y modularidad del código.
+* **Descripción**: Angular es un framework desarrollado y mantenido por Google, ideal para aplicaciones empresariales robustas. Ofrece una estructura completa para el desarrollo de aplicaciones web escalables.
+* **Ventajas**:
+    ** **Framework Completo**: Angular viene con muchas funcionalidades preconstruidas como inyección de dependencias, validaciones de formularios y enrutamiento avanzado.
+    ** **Typescript**: Angular utiliza Typescript, lo que añade tipado estático y mejora la mantenibilidad del código en proyectos grandes.
+    ** **Soporte Corporativo**: Es una excelente opción para proyectos empresariales a gran escala.
+    ** **Componentización y Modularidad**: Angular también se basa en componentes, lo que facilita la reutilización y modularidad del código.
 
 ==== Comparativa
 
@@ -136,49 +136,49 @@ Se ha decidido utilizar **React.js** con **Next.js** para el desarrollo del fron
 === Librerías Complementarias
 
 ==== Redux (o Context API)
-- **Descripción**: Una librería para manejar el estado global de la aplicación, esencial para una tienda online donde múltiples componentes necesitan acceder a la misma información (ej. carrito de compras, detalles del usuario).
-- **Uso**:
-    - **Carrito de Compras**: Gestiona el estado del carrito a lo largo de la navegación del usuario.
-    - **Autenticación**: Maneja el estado del usuario autenticado en diferentes partes de la aplicación.
+* **Descripción**: Una librería para manejar el estado global de la aplicación, esencial para una tienda online donde múltiples componentes necesitan acceder a la misma información (ej. carrito de compras, detalles del usuario).
+* **Uso**:
+    ** **Carrito de Compras**: Gestiona el estado del carrito a lo largo de la navegación del usuario.
+    ** **Autenticación**: Maneja el estado del usuario autenticado en diferentes partes de la aplicación.
 
 ==== Axios o Fetch API
-- **Descripción**: Para realizar solicitudes HTTP al backend. **Axios** es una librería popular, pero **Fetch API** es nativa de los navegadores modernos y es más ligera.
-- **Uso**:
-    - **Comunicación con APIs REST**: Recupera datos de productos, usuarios, y realiza transacciones.
-    - **Manejo de errores y reintentos**: Gestión eficiente de errores en las solicitudes HTTP para mejorar la experiencia de usuario.
+* **Descripción**: Para realizar solicitudes HTTP al backend. **Axios** es una librería popular, pero **Fetch API** es nativa de los navegadores modernos y es más ligera.
+* **Uso**:
+    ** **Comunicación con APIs REST**: Recupera datos de productos, usuarios, y realiza transacciones.
+    ** **Manejo de errores y reintentos**: Gestión eficiente de errores en las solicitudes HTTP para mejorar la experiencia de usuario.
 
-==== Tailwind CSS o Material-UI
-- **Tailwind CSS**:
-    - **Descripción**: Un framework CSS utilitario que permite crear interfaces rápidas y personalizadas sin necesidad de escribir mucho CSS personalizado.
-    - **Ventajas**:
-        - Muy flexible para crear diseños responsivos y personalizados.
-        - Menos sobrecarga de CSS y más control sobre el diseño final.
+==== Tailwind CSS o Material*UI
+* **Tailwind CSS**:
+    ** **Descripción**: Un framework CSS utilitario que permite crear interfaces rápidas y personalizadas sin necesidad de escribir mucho CSS personalizado.
+    ** **Ventajas**:
+        *** Muy flexible para crear diseños responsivos y personalizados.
+        *** Menos sobrecarga de CSS y más control sobre el diseño final.
 
-- **Material-UI**:
-    - **Descripción**: Un conjunto de componentes UI preconstruidos basados en el diseño Material de Google. Facilita la creación de una interfaz coherente y atractiva sin mucho esfuerzo de diseño personalizado.
-    - **Ventajas**:
-        - Fácil de usar y bien documentado.
-        - Proporciona una experiencia visual moderna y profesional.
+* **Material*UI**:
+    ** **Descripción**: Un conjunto de componentes UI preconstruidos basados en el diseño Material de Google. Facilita la creación de una interfaz coherente y atractiva sin mucho esfuerzo de diseño personalizado.
+    ** **Ventajas**:
+        *** Fácil de usar y bien documentado.
+        *** Proporciona una experiencia visual moderna y profesional.
 
 ==== WebSockets
-- **Descripción**: Para manejar la comunicación en tiempo real, como notificaciones en vivo de compras, actualizaciones de stock o mensajes promocionales.
-- **Uso**:
-    - **Actualización en Tiempo Real de Inventario**: Permite que el frontend se actualice sin necesidad de refrescar la página cuando los productos se agoten o se agreguen nuevas ofertas.
-    - **Notificaciones Push**: Enviar notificaciones sobre nuevas ofertas o cambios en la cuenta de usuario.
+* **Descripción**: Para manejar la comunicación en tiempo real, como notificaciones en vivo de compras, actualizaciones de stock o mensajes promocionales.
+* **Uso**:
+    ** **Actualización en Tiempo Real de Inventario**: Permite que el frontend se actualice sin necesidad de refrescar la página cuando los productos se agoten o se agreguen nuevas ofertas.
+    ** **Notificaciones Push**: Enviar notificaciones sobre nuevas ofertas o cambios en la cuenta de usuario.
 
 === Otras Herramientas Clave
 
 ==== Next.js (para React)
-- **Descripción**: Un framework basado en React que soporta el renderizado del lado del servidor (SSR), lo que mejora el SEO y reduce los tiempos de carga inicial.
-- **Ventajas**:
-    - **Mejora el SEO**: SSR permite que el contenido sea visible para los motores de búsqueda desde la primera carga.
-    - **Optimización de rendimiento**: Pre-renderizado de páginas y gestión eficiente de rutas.
-    - **Incremental Static Regeneration (ISR)**: Permite la regeneración estática incremental de páginas, ideal para catálogos de productos que se actualizan constantemente.
+* **Descripción**: Un framework basado en React que soporta el renderizado del lado del servidor (SSR), lo que mejora el SEO y reduce los tiempos de carga inicial.
+* **Ventajas**:
+    ** **Mejora el SEO**: SSR permite que el contenido sea visible para los motores de búsqueda desde la primera carga.
+    ** **Optimización de rendimiento**: Pre*renderizado de páginas y gestión eficiente de rutas.
+    ** **Incremental Static Regeneration (ISR)**: Permite la regeneración estática incremental de páginas, ideal para catálogos de productos que se actualizan constantemente.
 
 ==== Webpack o Vite
-- **Descripción**: Herramientas de construcción que optimizan el código JavaScript, CSS, y otros archivos del frontend, para mejorar los tiempos de carga y reducir el tamaño de los archivos.
-- **Uso**:
-    - **Optimización de Rendimiento**: Minificación de archivos, agrupación de dependencias y carga diferida de scripts para mejorar los tiempos de carga.
+* **Descripción**: Herramientas de construcción que optimizan el código JavaScript, CSS, y otros archivos del frontend, para mejorar los tiempos de carga y reducir el tamaño de los archivos.
+* **Uso**:
+    ** **Optimización de Rendimiento**: Minificación de archivos, agrupación de dependencias y carga diferida de scripts para mejorar los tiempos de carga.
 
 === Selección
 

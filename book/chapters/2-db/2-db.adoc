@@ -15,73 +15,73 @@ El diseño de la base de datos para la Nintendo eShop debe ser capaz de manejar 
 El diseño principal de la base de datos se basa en una arquitectura relacional con las siguientes entidades clave:
 
 1. **Tabla `Users`** (Usuarios)
-   - Esta tabla almacena la información de los usuarios registrados en la plataforma.
-   - **Campos**:
-     - `user_id` (PK, int, auto-increment): Identificador único del usuario.
-     - `username` (varchar, único): Nombre de usuario.
-     - `email` (varchar, único): Dirección de correo electrónico.
-     - `password` (varchar): Hash de la contraseña del usuario.
-     - `subscription_status` (enum: 'active', 'inactive', 'expired'): Estado de la suscripción.
-     - `created_at` (timestamp): Fecha de creación del perfil.
-     - `last_login` (timestamp): Último inicio de sesión.
-     - `country` (varchar): País del usuario, importante para localizar servicios y precios regionales.
+   * Esta tabla almacena la información de los usuarios registrados en la plataforma.
+   * **Campos**:
+     ** `user_id` (PK, int, auto*increment): Identificador único del usuario.
+     ** `username` (varchar, único): Nombre de usuario.
+     ** `email` (varchar, único): Dirección de correo electrónico.
+     ** `password` (varchar): Hash de la contraseña del usuario.
+     ** `subscription_status` (enum: 'active', 'inactive', 'expired'): Estado de la suscripción.
+     ** `created_at` (timestamp): Fecha de creación del perfil.
+     ** `last_login` (timestamp): Último inicio de sesión.
+     ** `country` (varchar): País del usuario, importante para localizar servicios y precios regionales.
 
 2. **Tabla `Products`** (Productos)
-   - Almacena todos los juegos, DLCs y demás productos que la Nintendo eShop tiene disponibles.
-   - **Campos**:
-     - `product_id` (PK, int, auto-increment): Identificador único del producto.
-     - `title` (varchar): Nombre del juego o producto.
-     - `description` (text): Descripción del producto.
-     - `price` (decimal): Precio del producto.
-     - `category_id` (FK, int): Categoría a la que pertenece el producto.
-     - `release_date` (date): Fecha de lanzamiento del juego.
-     - `stock` (int): Cantidad disponible (si aplica, en el caso de productos digitales generalmente ilimitado).
-     - `rating` (decimal): Clasificación promedio de los usuarios.
+   * Almacena todos los juegos, DLCs y demás productos que la Nintendo eShop tiene disponibles.
+   * **Campos**:
+     ** `product_id` (PK, int, auto*increment): Identificador único del producto.
+     ** `title` (varchar): Nombre del juego o producto.
+     ** `description` (text): Descripción del producto.
+     ** `price` (decimal): Precio del producto.
+     ** `category_id` (FK, int): Categoría a la que pertenece el producto.
+     ** `release_date` (date): Fecha de lanzamiento del juego.
+     ** `stock` (int): Cantidad disponible (si aplica, en el caso de productos digitales generalmente ilimitado).
+     ** `rating` (decimal): Clasificación promedio de los usuarios.
 
 3. **Tabla `Categories`** (Categorías)
-   - Almacena las categorías de productos (como géneros de juegos, tipos de productos, etc.).
-   - **Campos**:
-     - `category_id` (PK, int, auto-increment): Identificador único de la categoría.
-     - `name` (varchar): Nombre de la categoría (ej. "Aventura", "Acción", "RPG").
-     - `description` (text): Descripción de la categoría.
+   * Almacena las categorías de productos (como géneros de juegos, tipos de productos, etc.).
+   * **Campos**:
+     ** `category_id` (PK, int, auto*increment): Identificador único de la categoría.
+     ** `name` (varchar): Nombre de la categoría (ej. "Aventura", "Acción", "RPG").
+     ** `description` (text): Descripción de la categoría.
 
 4. **Tabla `Transactions`** (Transacciones)
-   - Almacena todas las transacciones realizadas por los usuarios.
-   - **Campos**:
-     - `transaction_id` (PK, int, auto-increment): Identificador único de la transacción.
-     - `user_id` (FK, int): Referencia al usuario que realizó la compra.
-     - `total_amount` (decimal): Monto total de la transacción.
-     - `payment_method` (varchar): Método de pago utilizado.
-     - `status` (enum: 'pending', 'completed', 'failed'): Estado de la transacción.
-     - `transaction_date` (timestamp): Fecha y hora de la transacción.
+   * Almacena todas las transacciones realizadas por los usuarios.
+   * **Campos**:
+     ** `transaction_id` (PK, int, auto*increment): Identificador único de la transacción.
+     ** `user_id` (FK, int): Referencia al usuario que realizó la compra.
+     ** `total_amount` (decimal): Monto total de la transacción.
+     ** `payment_method` (varchar): Método de pago utilizado.
+     ** `status` (enum: 'pending', 'completed', 'failed'): Estado de la transacción.
+     ** `transaction_date` (timestamp): Fecha y hora de la transacción.
 
 5. **Tabla `Transaction_Details`** (Detalles de la Transacción)
-   - Detalla los productos adquiridos en cada transacción.
-   - **Campos**:
-     - `transaction_detail_id` (PK, int, auto-increment): Identificador único del detalle de transacción.
-     - `transaction_id` (FK, int): Identificador de la transacción principal.
-     - `product_id` (FK, int): Producto adquirido.
-     - `quantity` (int): Cantidad de productos adquiridos (para productos físicos o suscripciones).
+   * Detalla los productos adquiridos en cada transacción.
+   * **Campos**:
+     ** `transaction_detail_id` (PK, int, auto*increment): Identificador único del detalle de transacción.
+     ** `transaction_id` (FK, int): Identificador de la transacción principal.
+     ** `product_id` (FK, int): Producto adquirido.
+     ** `quantity` (int): Cantidad de productos adquiridos (para productos físicos o suscripciones).
 
 6. **Tabla `Subscriptions`** (Suscripciones)
-   - Almacena la información sobre las suscripciones de los usuarios al servicio online.
-   - **Campos**:
-     - `subscription_id` (PK, int, auto-increment): Identificador único de la suscripción.
-     - `user_id` (FK, int): Identificador del usuario.
-     - `subscription_type` (varchar): Tipo de suscripción (por ejemplo, "mensual", "anual").
-     - `start_date` (date): Fecha de inicio de la suscripción.
-     - `end_date` (date): Fecha de finalización de la suscripción.
-     - `status` (enum: 'active', 'expired', 'cancelled'): Estado de la suscripción.
+   * Almacena la información sobre las suscripciones de los usuarios al servicio online.
+   * **Campos**:
+     ** `subscription_id` (PK, int, auto*increment): Identificador único de la suscripción.
+     ** `user_id` (FK, int): Identificador del usuario.
+     ** `subscription_type` (varchar): Tipo de suscripción (por ejemplo, "mensual", "anual").
+     ** `start_date` (date): Fecha de inicio de la suscripción.
+     ** `end_date` (date): Fecha de finalización de la suscripción.
+     ** `status` (enum: 'active', 'expired', 'cancelled'): Estado de la suscripción.
 
 7. **Tabla `Reviews`** (Reseñas de Productos)
-   - Permite a los usuarios dejar opiniones y calificaciones de los productos que han comprado.
-   - **Campos**:
-     - `review_id` (PK, int, auto-increment): Identificador único de la reseña.
-     - `user_id` (FK, int): Referencia al usuario que realizó la reseña.
-     - `product_id` (FK, int): Referencia al producto reseñado.
-     - `rating` (int): Puntuación otorgada al producto (por ejemplo, entre 1 y 5 estrellas).
-     - `review` (text): Texto de la reseña.
-     - `created_at` (timestamp): Fecha en que se dejó la reseña.
+   * Permite a los usuarios dejar opiniones y calificaciones de los productos que han comprado.
+   * **Campos**:
+     ** `review_id` (PK, int, auto*increment): Identificador único de la reseña.
+     ** `user_id` (FK, int): Referencia al usuario que realizó la reseña.
+     ** `product_id` (FK, int): Referencia al producto reseñado.
+     ** `rating` (int): Puntuación otorgada al producto (por ejemplo, entre 1 y 5 estrellas).
+     ** `review` (text): Texto de la reseña.
+     ** `created_at` (timestamp): Fecha en que se dejó la reseña.
 
 ==== Diagrama de Base de Datos
 
@@ -181,6 +181,6 @@ Ref: Products.product_id > Reviews.product_id
 
 Para una plataforma de la magnitud de la Nintendo eShop, un sistema de base de datos relacional robusto y escalable es esencial. Las siguientes opciones se consideran ideales:
 
-- **PostgreSQL**: Ofrece características avanzadas como particionamiento nativo y soporte para JSON, lo que puede ser útil si es necesario almacenar datos semiestructurados. PostgreSQL es también altamente escalable y tiene una gran comunidad de soporte.
-- **MySQL**: Es una opción ampliamente utilizada en Ecommerce, conocida por su velocidad en lecturas y su robustez. Con la configuración adecuada, MySQL puede manejar grandes volúmenes de datos.
-- **Base de datos distribuida (Cassandra, CockroachDB)**: Si la necesidad de escalabilidad es extrema, una base de datos distribuida como Cassandra o CockroachDB puede manejar grandes volúmenes de datos replicados globalmente, pero requiere un mayor esfuerzo de mantenimiento y configuración.
+* **PostgreSQL**: Ofrece características avanzadas como particionamiento nativo y soporte para JSON, lo que puede ser útil si es necesario almacenar datos semiestructurados. PostgreSQL es también altamente escalable y tiene una gran comunidad de soporte.
+* **MySQL**: Es una opción ampliamente utilizada en Ecommerce, conocida por su velocidad en lecturas y su robustez. Con la configuración adecuada, MySQL puede manejar grandes volúmenes de datos.
+* **Base de datos distribuida (Cassandra, CockroachDB)**: Si la necesidad de escalabilidad es extrema, una base de datos distribuida como Cassandra o CockroachDB puede manejar grandes volúmenes de datos replicados globalmente, pero requiere un mayor esfuerzo de mantenimiento y configuración.

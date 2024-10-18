@@ -7,107 +7,109 @@ Para ofrecer una visión completa de los costos potenciales de la plataforma **N
 En este entorno, la carga de trabajo es moderada y las necesidades de escalabilidad son mínimas. Se espera un volumen de transacciones significativamente menor que el máximo estimado de **10 millones de transacciones diarias** (probablemente entre 1 y 2 millones).
 
 ==== Infraestructura de Servidores
-- **Instancias de servidores medianas** (AWS EC2, GCP o Azure): 2-4 instancias.
-- **Costo de balanceadores de carga y CDN**: Menor uso de servicios de distribución.
-    - **Costo estimado**: $2,000 - $5,000 USD/mes.
+* **Instancias de servidores medianas** (AWS EC2, GCP o Azure): 2*4 instancias.
+* **Costo de balanceadores de carga y CDN**: Menor uso de servicios de distribución.
+    ** **Costo estimado**: $2,000 * $5,000 USD/mes.
 
 ==== Bases de Datos
-- **DynamoDB para transacciones masivas**: Uso limitado.
-- **PostgreSQL para transacciones críticas**: Instancias medianas.
-    - **Costo estimado**: $2,000 - $4,000 USD/mes.
+* **DynamoDB para transacciones masivas**: Uso limitado.
+* **PostgreSQL para transacciones críticas**: Instancias medianas.
+    ** **Costo estimado**: $2,000 * $4,000 USD/mes.
 
 ==== Backend
-- Backend en **Node.js** desplegado en pocas instancias.
-    - **Costo estimado**: $200 - $500 USD/mes.
+* Backend en **Node.js** desplegado en pocas instancias.
+    ** **Costo estimado**: $200 * $500 USD/mes.
 
 ==== Frontend
-- **Despliegue en Vercel/Netlify** o un servicio similar con CDN básico.
-    - **Costo estimado**: $500 - $1,500 USD/mes.
+* **Despliegue en Vercel/Netlify** o un servicio similar con CDN básico.
+    ** **Costo estimado**: $500 * $1,500 USD/mes.
 
 ==== Costos de Desarrollo y Personal
-- Equipo reducido: 3-4 desarrolladores en total (backend, frontend, DevOps).
-    - **Costo estimado**: $30,000 - $50,000 USD/mes.
+* Equipo reducido: 3*4 desarrolladores en total (backend, frontend, DevOps).
+    ** **Costo estimado**: $30,000 * $50,000 USD/mes.
 
 ==== Operación Continua y Mantenimiento
-- **Monitoreo** básico, menor esfuerzo en mantenimiento.
-    - **Costo estimado**: $5,000 - $8,000 USD/mes.
+* **Monitoreo** básico, menor esfuerzo en mantenimiento.
+    ** **Costo estimado**: $5,000 * $8,000 USD/mes.
 
 ==== Costo Total Aproximado Mensual (Entorno Bajo):
-- **$39,700 - $69,000 USD/mes**.
+* **$39,700 * $69,000 USD/mes**.
 
 === Entorno Normal (Escala intermedia / Demanda moderada)
 
 Este escenario representa una operación más estándar para un sistema como la Nintendo eShop, con un volumen de transacciones entre **3 y 5 millones de transacciones diarias**.
 
 ==== Infraestructura de Servidores
-- **Instancias más grandes** y escalables, con varias réplicas y redundancia.
-- **Balanceadores de carga** y **CDN** más robustos.
-    - **Costo estimado**: $5,000 - $10,000 USD/mes.
+* **Instancias más grandes** y escalables, con varias réplicas y redundancia.
+* **Balanceadores de carga** y **CDN** más robustos.
+    ** **Costo estimado**: $5,000 * $10,000 USD/mes.
 
 ==== Bases de Datos
-- **DynamoDB** con mayor capacidad de lectura/escritura.
-- **PostgreSQL** gestionado en RDS u otro servicio equivalente.
-    - **Costo estimado**: $5,000 - $8,000 USD/mes.
+* **DynamoDB** con mayor capacidad de lectura/escritura.
+* **PostgreSQL** gestionado en RDS u otro servicio equivalente.
+    ** **Costo estimado**: $5,000 * $8,000 USD/mes.
 
 ==== Backend
-- Backend distribuido en varias instancias.
-    - **Costo estimado**: $500 - $1,000 USD/mes.
+* Backend distribuido en varias instancias.
+    ** **Costo estimado**: $500 * $1,000 USD/mes.
 
 ==== Frontend
-- **Despliegue avanzado con CDN** para manejar tráfico global.
-    - **Costo estimado**: $1,500 - $3,000 USD/mes.
+* **Despliegue avanzado con CDN** para manejar tráfico global.
+    ** **Costo estimado**: $1,500 * $3,000 USD/mes.
 
 ==== Costos de Desarrollo y Personal
-- Equipo ampliado: 6-8 desarrolladores.
-    - **Costo estimado**: $50,000 - $80,000 USD/mes.
+* Equipo ampliado: 6*8 desarrolladores.
+    ** **Costo estimado**: $50,000 * $80,000 USD/mes.
 
 ==== Operación Continua y Mantenimiento
-- Mayor inversión en monitoreo, alertas y soporte continuo.
-    - **Costo estimado**: $8,000 - $15,000 USD/mes.
+* Mayor inversión en monitoreo, alertas y soporte continuo.
+    ** **Costo estimado**: $8,000 * $15,000 USD/mes.
 
 ==== Costo Total Aproximado Mensual (Entorno Normal):
-- **$70,000 - $117,000 USD/mes**.
+* **$70,000 * $117,000 USD/mes**.
 
 === Entorno Crítico (Alta Escala / Máxima demanda)
 
 Este es el entorno más complejo y avanzado, diseñado para manejar el volumen máximo esperado de **10 millones de transacciones diarias**, con alta disponibilidad, redundancia global, y operaciones 24/7 sin interrupciones.
 
 ==== Infraestructura de Servidores
-- **Instancias de alta capacidad** (dedicadas o muy grandes) y con múltiples réplicas.
-- **Balanceadores de carga globales** y **CDN de alta gama** para garantizar bajas latencias.
-    - **Costo estimado**: $10,000 - $20,000 USD/mes.
+* **Instancias de alta capacidad** (dedicadas o muy grandes) y con múltiples réplicas.
+* **Balanceadores de carga globales** y **CDN de alta gama** para garantizar bajas latencias.
+    ** **Costo estimado**: $10,000 * $20,000 USD/mes.
 
 ==== Bases de Datos
-- **DynamoDB** para grandes volúmenes de transacciones, con escalabilidad automática.
-- **PostgreSQL** con instancias dedicadas de alto rendimiento.
-    - **Costo estimado**: $7,000 - $12,000 USD/mes.
+* **DynamoDB** para grandes volúmenes de transacciones, con escalabilidad automática.
+* **PostgreSQL** con instancias dedicadas de alto rendimiento.
+    ** **Costo estimado**: $7,000 * $12,000 USD/mes.
 
 ==== Backend
-- **Despliegue distribuido** en múltiples regiones, con microservicios y mayor capacidad.
-    - **Costo estimado**: $1,000 - $2,000 USD/mes.
+* **Despliegue distribuido** en múltiples regiones, con microservicios y mayor capacidad.
+    ** **Costo estimado**: $1,000 * $2,000 USD/mes.
 
 ==== Frontend
-- **Despliegue en una red global** de CDN con baja latencia y gran capacidad para picos de tráfico.
-    - **Costo estimado**: $3,000 - $5,000 USD/mes.
+* **Despliegue en una red global** de CDN con baja latencia y gran capacidad para picos de tráfico.
+    ** **Costo estimado**: $3,000 * $5,000 USD/mes.
 
 ==== Costos de Desarrollo y Personal
-- Equipo completo: 10+ personas (backend, frontend, DevOps, QA, UX/UI).
-    - **Costo estimado**: $80,000 - $120,000 USD/mes.
+* Equipo completo: 10+ personas (backend, frontend, DevOps, QA, UX/UI).
+    ** **Costo estimado**: $80,000 * $120,000 USD/mes.
 
 ==== Operación Continua y Mantenimiento
-- Soporte continuo 24/7, con inversión en monitoreo avanzado y alertas.
-    - **Costo estimado**: $15,000 - $30,000 USD/mes.
+* Soporte continuo 24/7, con inversión en monitoreo avanzado y alertas.
+    ** **Costo estimado**: $15,000 * $30,000 USD/mes.
 
 ==== Costo Total Aproximado Mensual (Entorno Crítico):
-- **$116,000 - $189,000 USD/mes**.
+* **$116,000 * $189,000 USD/mes**.
 
 === Resumen de Costos
 
 [options="header"]
 |========================================================
 | Entorno           | Costo Estimado Mensual (USD)        
-| **Bajo**          | $39,700 - $69,000 USD/mes           
-| **Normal**        | $70,000 - $117,000 USD/mes          
-| **Crítico**       | $116,000 - $189,000 USD/mes        
+| **Bajo**          | $39,700 * $69,000 USD/mes           
+| **Normal**        | $70,000 * $117,000 USD/mes          
+| **Crítico**       | $116,000 * $189,000 USD/mes        
 |========================================================
+
+***
 
