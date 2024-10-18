@@ -1,0 +1,12 @@
+// Image route per chapter
+ifndef::backend-pdf[]
+:imagesdir: book/chapters/_example/images/
+endif::[]
+include::chapters/1-server/1-server.adoc[]
+include::chapters/2-db/2-db.adoc[]
+include::chapters/3-rest/3-rest.adoc[]
+include::chapters/4-costs/4-costs.adoc[]
+include::chapters/5-backend/5-backend.adoc[]
+include::chapters/6-frontend/6-frontend.adoc[]
+include::chapters/7-professionals/7-professionals.adoc[]
+include::chapters/8-timelimits/8-timelimits.adoc[]

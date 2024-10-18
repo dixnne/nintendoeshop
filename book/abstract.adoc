@@ -1,0 +1,10 @@
+[preface]
+[role="abstract"]
+
+== Abstract
+
+Este proyecto presenta el diseño e implementación de una plataforma Ecommerce destinada a la distribución de videojuegos digitales a través de la Nintendo eShop. Dada la creciente demanda de servicios digitales y la importancia del comercio electrónico en la industria de los videojuegos, el sistema debe ser capaz de gestionar hasta 10 millones de transacciones diarias, garantizando escalabilidad, rendimiento y seguridad.
+
+El informe abarca la selección de servidores en la nube con capacidades de autoescalado, el diseño de una base de datos optimizada para el manejo de grandes volúmenes de datos y un conjunto de endpoints REST que aseguran la fluidez de las transacciones. Además, se examina la elección de tecnologías backend y frontend, considerando la opción entre un CMS o un desarrollo customizado. La estimación de costos operativos y los plazos de implementación, así como la identificación de los profesionales necesarios, se presentan para asegurar un desarrollo eficiente y efectivo del proyecto.
+
+Este diseño de sistema busca proveer una solución moderna, flexible y de alto rendimiento, posicionando a la Nintendo eShop como una plataforma confiable y fácil de usar para millones de jugadores alrededor del mundo.

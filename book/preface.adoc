@@ -1,0 +1,10 @@
+[preface]
+== Prefacio
+
+En la era digital actual, la distribución de videojuegos ha experimentado una transformación significativa con el auge del comercio electrónico y los servicios en línea. La Nintendo eShop ha emergido como una plataforma clave para que millones de jugadores en todo el mundo adquieran juegos digitales y otros contenidos relacionados.
+
+Con un enfoque en la implementación tecnológica avanzada y el aprovechamiento de servicios de infraestructura en la nube, este proyecto busca proporcionar un esquema detallado de las soluciones técnicas que permitirán manejar un volumen de hasta 10 millones de transacciones diarias, garantizando al mismo tiempo la seguridad, disponibilidad y rendimiento de la plataforma.
+
+Este informe abarca todas las fases de planificación y diseño, desde la selección de servidores hasta la elección de tecnologías de frontend y backend, la estimación de costos y plazos de implementación, y la identificación de los profesionales necesarios para llevar a cabo el proyecto. 
+
+La presente documentación tiene como fin servir de guía tanto para los desarrolladores como para los futuros interesados en la expansión y mejora de plataformas de distribución digital de videojuegos, respondiendo a las necesidades de un mercado en constante crecimiento y evolución.

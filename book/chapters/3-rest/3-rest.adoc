@@ -1,0 +1,247 @@
+== Diseño de Endpoints REST
+
+El diseño de los endpoints REST debe estar optimizado para manejar un gran volumen de solicitudes, permitir la integración con diferentes interfaces (web, móvil, consola) y garantizar la seguridad y el rendimiento de las transacciones. A continuación, se detallan los endpoints REST fundamentales para el sistema de la Nintendo eShop, organizados por funcionalidad.
+
+=== Consideraciones de Diseño
+
+1. **Escalabilidad**: Dado el volumen estimado de 10 millones de transacciones diarias, es necesario implementar **pagos asíncronos**, **caché** y **limites de tasa** para evitar sobrecarga en el sistema.
+2. **Seguridad**: Se debe utilizar **OAuth 2.0** o **JWT** para autenticar usuarios y proteger los datos de transacciones. Además, todos los endpoints deben comunicarse a través de **HTTPS**.
+3. **Versionado**: Para mantener la compatibilidad hacia adelante, todos los endpoints deben estar versionados (ej. `/api/v1/`).
+
+=== Endpoints para Usuarios
+
+==== 1. Registro de Usuario
+
+- **POST /api/v1/users/register**
+    - **Descripción**: Permite a los usuarios crear una nueva cuenta en la plataforma.
+
+.Cuerpo de la solicitud (JSON)
+[source,json]
+----
+{
+    "username": "string",
+    "email": "string",
+    "password": "string",
+    "country": "string"
+}
+----
+.Respuesta (JSON)
+[source,json]
+----
+{
+    "user_id": 123,
+    "username": "string",
+    "email": "string",
+    "created_at": "timestamp"
+}
+----
+
+    - **Consideraciones de seguridad**: Se deben realizar validaciones estrictas y almacenar la contraseña en formato hash.
+
+==== 2. Autenticación de Usuario (Login)
+
+- **POST /api/v1/users/login**
+    - **Descripción**: Autentica a los usuarios y devuelve un token de acceso (JWT) para las siguientes solicitudes.
+
+.Cuerpo de la solicitud (JSON)
+[source,json]
+----
+{
+    "email": "string",
+    "password": "string"
+}
+----
+.Respuesta (JSON)
+[source,json]
+----
+{
+    "token": "JWT_token",
+    "user_id": 123
+}
+----
+
+    - **Notas**: El token debe tener un tiempo de expiración configurable para evitar uso indebido.
+
+==== 3. Perfil de Usuario
+
+- **GET /api/v1/users/{user_id}**
+    - **Descripción**: Devuelve los detalles del perfil de usuario.
+    - **Cabecera**: El token JWT debe ser incluido en el encabezado.
+
+.Respuesta (JSON)
+[source,json]
+----
+{
+    "user_id": 123,
+    "username": "string",
+    "email": "string",
+    "country": "string",
+    "subscription_status": "active",
+    "created_at": "timestamp",
+    "last_login": "timestamp"
+}
+----
+
+==== 4. Actualización de Perfil
+
+- **PUT /api/v1/users/{user_id}**
+    - **Descripción**: Permite al usuario actualizar sus datos de perfil.
+
+.Cuerpo de la solicitud (JSON)
+[source,json]
+----
+{
+    "username": "string",
+    "email": "string",
+    "password": "string",
+    "country": "string"
+}
+----
+.Respuesta (JSON)
+[source,json]
+----
+{
+    "message": "Profile updated successfully"
+}
+----
+
+=== Endpoints para Productos
+
+==== 1. Listado de Productos
+
+- **GET /api/v1/products**
+    - **Descripción**: Devuelve un listado de productos disponibles en la eShop.
+    - **Parámetros de consulta** (opcional):
+        - `category`: Filtra por categoría (ej. "Acción", "Aventura").
+        - `sort_by`: Ordena por campos como `price`, `release_date`, `rating`.
+        - `page`, `limit`: Paginación.
+
+.Respuesta (JSON)
+[source,json]
+----
+{
+    "products": [
+        {
+        "product_id": 1,
+        "title": "string",
+        "description": "string",
+        "price": 59.99,
+        "category": "Acción",
+        "release_date": "date",
+        "rating": 4.5
+        },
+        {
+        "product_id": 2,
+        "title": "string",
+        ...
+        }
+    ],
+    "total_results": 100,
+    "page": 1,
+    "limit": 10
+}
+----
+
+==== 2. Detalle de Producto
+
+- **GET /api/v1/products/{product_id}**
+    - **Descripción**: Devuelve los detalles de un producto específico.
+
+.Respuesta (JSON)
+[source,json]
+----
+{
+    "product_id": 1,
+    "title": "string",
+    "description": "string",
+    "price": 59.99,
+    "category": "Acción",
+    "release_date": "date",
+    "rating": 4.5,
+    "stock": 1000
+}
+----
+
+=== Endpoints para Transacciones
+
+==== 1. Realizar Compra
+
+- **POST /api/v1/transactions**
+    - **Descripción**: Crea una nueva transacción de compra.
+
+.Cuerpo de la solicitud (JSON)
+[source,json]
+----
+{
+    "user_id": 123,
+    "items": [
+        {
+        "product_id": 1,
+        "quantity": 1
+        },
+        {
+        "product_id": 2,
+        "quantity": 2
+        }
+    ],
+    "payment_method": "credit_card",
+    "total_amount": 139.97
+}
+----
+.Respuesta (JSON)
+[source,json]
+----
+{
+    "transaction_id": 456,
+    "status": "pending",
+    "created_at": "timestamp"
+}
+----
+
+    - **Notas**: La transacción debe pasar por un procesamiento asíncrono para manejar el pago, lo que cambiará el estado de "pending" a "completed" o "failed".
+
+#### 2. Ver Estado de Transacción
+
+- **GET /api/v1/transactions/{transaction_id}**
+    - **Descripción**: Devuelve el estado de una transacción específica.
+
+.Respuesta (JSON)
+[source,json]
+----
+{
+    "transaction_id": 456,
+    "user_id": 123,
+    "total_amount": 139.97,
+    "status": "completed",
+    "transaction_date": "timestamp"
+}
+----
+
+==== 3. Historial de Transacciones del Usuario
+- **GET /api/v1/users/{user_id}/transactions**
+    - **Descripción**: Devuelve el historial de transacciones de un usuario.
+    - **Parámetros de consulta** (opcional):
+        - `status`: Filtrar por estado de la transacción (`pending`, `completed`, `failed`).
+        - `page`, `limit`: Paginación.
+
+.Respuesta (JSON)
+[source,json]
+----
+{
+    "transactions": [
+        {
+          "transaction_id": 456,
+          "total_amount": 139.97,
+          "status": "completed",
+          "transaction_date": "timestamp"
+        },
+        {
+          "transaction_id": 789,
+          ...
+        }
+    ]
+}
+----
+
+
+Este diseño de endpoints REST está pensado para ser modular, escalable y seguro, permitiendo que los usuarios interactúen con la Nintendo eShop de manera fluida.

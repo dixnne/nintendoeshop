@@ -1,0 +1,210 @@
+== Selección Tecnológica Backend
+
+La elección de la tecnología backend es fundamental para garantizar que la plataforma Nintendo eShop pueda manejar el gran volumen de transacciones diarias (hasta 10 millones) y proporcione una experiencia eficiente y segura a los usuarios. A continuación se analiza si es más adecuado usar un **CMS (Content Management System)** o un backend **custom** desarrollado a medida, así como las tecnologías clave que se podrían utilizar en cada enfoque.
+
+=== Architecture Decision Record (ADR)
+
+**Título**: Selección Tecnológica del Backend para el Proyecto Nintendo eShop  
+**Fecha**: 17 de octubre de 2024
+
+==== Contexto
+
+El proyecto Nintendo eShop es una plataforma Ecommerce destinada a manejar hasta 10 millones de transacciones diarias, permitiendo a los usuarios adquirir juegos digitales y otros servicios relacionados. El backend debe ser capaz de soportar un alto volumen de tráfico, garantizar la escalabilidad, y ofrecer baja latencia y alta disponibilidad para una experiencia fluida.
+
+==== Problema
+
+Se requiere tomar una decisión sobre la tecnología más adecuada para el desarrollo del backend, teniendo en cuenta:
+- **Alta concurrencia**: Manejo de millones de solicitudes diarias.
+- **Escalabilidad**: Capacidad de ajustarse al crecimiento del número de usuarios.
+- **Mantenibilidad**: Estructura modular que facilite la evolución del sistema.
+- **Integraciones**: Facilitar la conexión con servicios en la nube, bases de datos, sistemas de pago y API externas.
+- **Tiempo de desarrollo**: Equilibrar flexibilidad y productividad en el desarrollo.
+
+Las opciones evaluadas fueron el uso de un **CMS** (Content Management System) de Ecommerce o un **desarrollo a medida (custom)** con tecnologías de microservicios y frameworks modernos.
+
+==== Opciones Evaluadas
+
+1. **CMS de Ecommerce**:
+    - Herramientas como **Shopify Plus** o **Magento Enterprise** proporcionan una solución rápida de implementar con funcionalidades preconstruidas para manejar plataformas de Ecommerce.
+    - **Ventajas**:
+        - Rápida implementación.
+        - Gestión simplificada de productos, usuarios, y pagos.
+        - Escalabilidad integrada en servicios gestionados.
+    - **Desventajas**:
+        - Falta de flexibilidad para personalizaciones complejas.
+        - Limitaciones en el manejo de grandes volúmenes de transacciones simultáneas.
+        - Costos elevados de licencias para alto volumen.
+
+2. **Desarrollo Custom con Node.js y Nest.js**:
+    - Desarrollo a medida utilizando **Node.js** como entorno de ejecución y **Nest.js** como framework para la creación de APIs escalables.
+    - **Ventajas**:
+        - **Escalabilidad**: Node.js es altamente eficiente en el manejo de múltiples conexiones simultáneas, siendo ideal para una plataforma de Ecommerce con gran tráfico.
+        - **Flexibilidad**: El enfoque modular de **Nest.js** permite construir un backend personalizable, optimizado y adaptado a las necesidades específicas del proyecto.
+        - **Integración con servicios en la nube**: Amplia compatibilidad con plataformas como **AWS Lambda**, bases de datos como **DynamoDB** y PostgreSQL, y servicios de almacenamiento.
+        - **Comunidad y soporte**: Gran ecosistema de herramientas y bibliotecas para acelerar el desarrollo.
+    - **Desventajas**:
+        - Mayor tiempo de desarrollo inicial en comparación con una solución CMS.
+        - Requiere un equipo con conocimientos especializados en desarrollo y DevOps para manejar la infraestructura.
+
+==== Decisión
+
+Se ha decidido utilizar **Node.js** junto con **Nest.js** para el desarrollo del backend de la Nintendo eShop. Esta elección se justifica por las siguientes razones:
+
+1. **Escalabilidad**: Node.js está diseñado para manejar grandes cantidades de conexiones simultáneas con eficiencia, lo que es crucial para soportar el volumen de tráfico esperado de hasta 10 millones de transacciones diarias.
+   
+2. **Flexibilidad**: La naturaleza modular de Nest.js permite desarrollar un backend a medida, optimizando la estructura de la aplicación para ofrecer servicios personalizados, como la gestión de usuarios, carrito de compras, sistemas de pago y recomendaciones personalizadas.
+
+3. **Compatibilidad con microservicios**: Nest.js facilita la arquitectura basada en microservicios, lo que permitirá desplegar y escalar diferentes partes de la aplicación de forma independiente. Esto es especialmente útil para integrar diferentes funciones del sistema, como el procesamiento de pagos, la gestión de productos y las notificaciones.
+
+4. **Soporte a tecnologías en la nube**: El ecosistema de Node.js y Nest.js ofrece una integración nativa con servicios de nube como **AWS Lambda**, **Google Cloud Functions**, y bases de datos distribuidas como **DynamoDB**. Esto facilitará la creación de una infraestructura en la nube altamente eficiente y escalable.
+
+5. **Tiempos de respuesta**: Node.js, con su arquitectura basada en eventos no bloqueantes, es ideal para minimizar la latencia en aplicaciones que requieren procesamiento en tiempo real, como un Ecommerce donde los usuarios esperan respuestas inmediatas al interactuar con la plataforma.
+
+6. **Mantenibilidad y productividad**: Nest.js sigue principios de desarrollo bien organizados y estandarizados, lo que facilita la mantenibilidad a largo plazo del código y permite que nuevos desarrolladores se integren al equipo sin dificultad.
+
+==== Consecuencias
+
+- **Positivas**:
+    - La plataforma será altamente escalable, con la capacidad de manejar millones de usuarios simultáneamente y adaptarse a futuros crecimientos.
+    - La arquitectura modular y flexible permitirá hacer mejoras o añadir nuevas funcionalidades sin afectar el funcionamiento general del sistema.
+    - La integración con servicios en la nube proporcionará un entorno robusto y altamente disponible, mejorando la experiencia del usuario.
+
+- **Negativas**:
+    - Requiere un tiempo de desarrollo inicial mayor en comparación con el uso de un CMS, aunque esto se compensa a largo plazo con la flexibilidad y capacidad de personalización.
+    - El equipo de desarrollo necesitará experiencia avanzada en tecnologías de backend y gestión de infraestructura en la nube, lo que podría incrementar los costos iniciales de contratación y formación.
+
+=== CMS (Content Management System)
+
+Un **CMS** es una plataforma prediseñada que permite crear y gestionar sitios web con una funcionalidad estándar y extensible. Sin embargo, en el contexto de una tienda como la Nintendo eShop, los CMS convencionales pueden no ser la mejor opción, ya que tienen limitaciones en cuanto a la escalabilidad y la personalización para manejar transacciones tan masivas y complejas.
+
+==== Ventajas
+
+- **Implementación rápida**: Muchas funcionalidades, como la gestión de productos y usuarios, ya están preconstruidas.
+- **Costos iniciales más bajos**: Los CMS son fáciles de implementar sin requerir tanto desarrollo desde cero.
+- **Integraciones predefinidas**: Con módulos o plugins para integrar pasarelas de pago, seguridad, y otras funcionalidades comunes.
+
+==== Desventajas de un CMS
+
+- **Escalabilidad limitada**: CMS como Magento, Shopify o WooCommerce tienen problemas para manejar un alto número de transacciones simultáneas sin modificaciones costosas.
+- **Rigidez**: Personalizar la lógica de negocio o adaptarse a requisitos específicos (como la gestión de suscripciones o la cantidad de usuarios simultáneos) puede ser complicado.
+- **Costos de mantenimiento**: A medida que se introducen personalizaciones, el mantenimiento y la escalabilidad se vuelven más difíciles y costosos.
+
+Por lo tanto, para un proyecto con el volumen y la complejidad de la Nintendo eShop, un CMS no sería la opción ideal si se busca optimizar a largo plazo.
+
+=== Backend Custom
+
+Un **backend custom** ofrece la flexibilidad y el control necesarios para construir una plataforma robusta y escalable desde cero. Aunque esto implica un mayor costo inicial y más tiempo de desarrollo, es la mejor opción para una plataforma que debe gestionar un alto tráfico, personalizaciones complejas, y ofrecer soporte en tiempo real a los usuarios.
+
+
+==== Ventajas de un Backend Custom
+- **Escalabilidad**: Se puede diseñar la infraestructura para escalar automáticamente en función de la demanda, utilizando tecnologías como microservicios y bases de datos distribuidas.
+- **Control total**: La lógica de negocio puede ser completamente personalizada, lo que es esencial para funciones como la gestión de suscripciones, control de stock, o un sistema de recompensas.
+- **Integración optimizada**: Se puede integrar con diferentes servicios de pago, analítica, y gestión de usuarios de manera eficiente y bajo demanda.
+
+==== Desventajas de un Backend Custom
+
+- **Mayor tiempo y costo inicial**: El desarrollo desde cero es más lento y costoso comparado con un CMS, aunque esto se amortiza a largo plazo por la flexibilidad.
+- **Requiere un equipo especializado**: Necesitas desarrolladores con experiencia en tecnologías escalables y microservicios.
+
+=== Tecnologías Sugeridas para un Backend Custom
+
+Para un proyecto de la magnitud de la Nintendo eShop, las siguientes tecnologías fueron consideradas para el desarrollo del backend:
+
+==== Lenguajes y Frameworks
+- **Node.js** con **Express.js**:
+    - **Descripción**: Node.js es una opción muy popular para aplicaciones de alto rendimiento y en tiempo real. Permite manejar múltiples conexiones concurrentes gracias a su naturaleza asíncrona y orientada a eventos. Además, cuenta con una gran comunidad y ecosistema de paquetes.
+    - **Ventajas**:
+        - Excelente para manejar múltiples solicitudes simultáneas.
+        - Buen rendimiento para operaciones de I/O, lo que es útil para manejar transacciones.
+        - Amplia gama de bibliotecas disponibles para optimizar el desarrollo.
+
+- **Java** con **Spring Boot**:
+    - **Descripción**: Spring Boot es un framework maduro y robusto para el desarrollo de aplicaciones empresariales escalables. Ofrece excelentes herramientas para el manejo de transacciones, seguridad, y escalabilidad.
+    - **Ventajas**:
+        - Escalabilidad empresarial.
+        - Gran soporte para integraciones de bases de datos distribuidas y transacciones.
+        - Soporte sólido para microservicios y desarrollo modular.
+
+- **Python** con **Django** o **Flask**:
+    - **Descripción**: Python es un lenguaje poderoso y versátil, especialmente útil para desarrollar APIs rápidas. Django, en particular, ofrece una arquitectura "batteries included", mientras que Flask es más ligero y flexible.
+    - **Ventajas**:
+        - Rápido desarrollo.
+        - Buen soporte para escalabilidad y seguridad.
+        - Ecosistema maduro para integraciones con bases de datos y otros servicios.
+
+==== Bases de Datos
+- **PostgreSQL**:
+    - **Descripción**: Es una base de datos relacional que ofrece gran flexibilidad y soporte para operaciones complejas, como las que requiere una tienda online con un gran catálogo y transacciones complejas.
+    - **Ventajas**:
+        - Soporte para replicación y particionamiento.
+        - Excelente manejo de datos transaccionales y consistencia ACID.
+        - Compatibilidad con JSON para almacenar datos semiestructurados.
+
+- **MongoDB**:
+    - **Descripción**: Una base de datos NoSQL que permite almacenar datos en forma de documentos JSON. Es ideal para manejar catálogos grandes y sistemas que requieren flexibilidad de esquemas.
+    - **Ventajas**:
+        - Escalabilidad horizontal fácil.
+        - Flexibilidad para almacenar productos con diferentes atributos dinámicos (como descripciones, precios por región, etc.).
+- **DynamoDB** (NoSQL Administrado en la Nube):
+    - **Descripción**: Es un servicio de base de datos noSQL ofrecido por Amazon como parte de Amazon Web Services.
+    - **Ventajas**:
+        - Escalabilidad automática: DynamoDB, como servicio administrado de AWS, está diseñado para escalar automáticamente según el tráfico, lo que lo hace ideal para cargas variables y grandes volúmenes de transacciones.
+        - Alto rendimiento: DynamoDB es capaz de manejar millones de solicitudes por segundo, lo que lo convierte en una excelente opción para sistemas de Ecommerce de gran escala.
+        - Modelo de facturación por uso: Su modelo de pago por consumo lo hace atractivo, ya que se paga en función de las lecturas y escrituras realizadas, optimizando costos.
+        - Gestión simplificada: Como es un servicio totalmente administrado por AWS, no se necesita gestionar la infraestructura de la base de datos, lo que reduce la complejidad operativa.
+
+- **Redis** (para caché y sesiones):
+    - **Descripción**: Una base de datos en memoria que se usa comúnmente para almacenar sesiones de usuarios, caché de productos o resultados de consultas frecuentes, lo que ayuda a reducir la carga en la base de datos principal.
+    - **Ventajas**:
+        - Tiempo de respuesta extremadamente rápido.
+        - Optimización de rendimiento para lecturas frecuentes.
+
+==== Arquitectura de microservicios
+- **Microservicios**:
+    - **Descripción**: En lugar de tener un solo servidor monolítico, dividir la aplicación en múltiples microservicios (por ejemplo, uno para usuarios, otro para transacciones, y otro para productos) permite una escalabilidad y un mantenimiento más eficientes.
+    - **Ventajas**:
+        - Cada componente puede ser desarrollado, escalado y desplegado de manera independiente.
+        - Mejor tolerancia a fallos y más fácil de mantener a medida que la aplicación crece.
+
+==== Herramientas para Mensajería y Procesamiento Asíncrono
+- **RabbitMQ** o **Apache Kafka**:
+    - **Descripción**: Sistemas de mensajería que permiten manejar de manera eficiente las transacciones asíncronas y las tareas en segundo plano, como la confirmación de pagos o el procesamiento de actualizaciones en tiempo real.
+    - **Ventajas**:
+        - Permiten procesar grandes volúmenes de eventos sin sobrecargar la aplicación principal.
+        - Integración sencilla con microservicios y arquitecturas distribuidas.
+
+==== Seguridad
+- **OAuth 2.0 / JWT (JSON Web Tokens)**:
+    - **Descripción**: Se recomienda utilizar OAuth 2.0 para manejar la autenticación y autorización de los usuarios, y JWT para emitir tokens de acceso seguros que los usuarios puedan utilizar en las sesiones.
+    - **Ventajas**:
+        - Tokens ligeros y seguros.
+        - Integración sencilla con APIs y microservicios.
+
+==== Escalabilidad y Orquestación
+- **Kubernetes**:
+    - **Descripción**: Es una herramienta de orquestación que ayuda a gestionar contenedores Docker, lo que facilita la implementación y escalado de microservicios.
+    - **Ventajas**:
+        - Facilita la implementación y el escalado automático de los microservicios.
+        - Buena integración con las principales nubes (AWS, Google Cloud, Azure).
+        - Optimización de recursos y mejor resiliencia.
+
+==== Plataformas en la Nube
+- **Amazon Web Services (AWS)**, **Google Cloud Platform (GCP)** o **Microsoft Azure**:
+    - **Descripción**: Proveedores de servicios en la nube que ofrecen servicios de bases de datos, almacenamiento, y escalabilidad automatizada. También proporcionan soluciones serverless como **AWS Lambda** o **Google Cloud Functions** para manejar partes específicas de la lógica de backend.
+    - **Ventajas**:
+        - Escalabilidad automática y alta disponibilidad.
+        - Amplias opciones de bases de datos, almacenamiento en caché, y sistemas de mensajería.
+        - Servicios de pago bajo demanda.
+
+=== Selección
+
+Para una plataforma como la Nintendo eShop, que requiere alta escalabilidad, control total sobre la personalización, y soporte para millones de transacciones diarias, la mejor opción es desarrollar un **backend custom**, junto con arquitecturas de **microservicios** y herramientas de orquestación como **Kubernetes**.
+
+Node.js es ideal si se priorizan la velocidad de desarrollo, el manejo de un alto número de conexiones simultáneas y una arquitectura basada en microservicios. Es una opción sólida para el backend de la Nintendo eShop.
+
+La combinación de DynamoDB para datos de alto volumen y consultas rápidas, con PostgreSQL para datos estructurados y transacciones críticas, es la mejor opción para la Nintendo eShop:
+- DynamoDB: Manejará las transacciones relacionadas con productos, usuarios, inventarios y todas las lecturas y escrituras de alto volumen. Es escalable, completamente administrado, y capaz de manejar el tráfico masivo esperado.
+- PostgreSQL: Se utilizará para manejar las transacciones críticas y las operaciones que requieren ACID y consistencia fuerte, como los pagos y registros de facturación.
+Esta combinación ofrece la flexibilidad y escalabilidad de NoSQL, junto con la consistencia y transacciones seguras de una base de datos relacional, optimizando el rendimiento y la seguridad del proyecto.
+
+Este enfoque proporcionará la flexibilidad, el rendimiento y la seguridad necesarios para construir una plataforma sólida y confiable a largo plazo.

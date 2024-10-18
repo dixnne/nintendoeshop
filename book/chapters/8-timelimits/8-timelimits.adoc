@@ -1,0 +1,84 @@
+== Estimación de Plazos pada Implementación
+
+Dado que el proyecto de la Nintendo eShop implica la creación de una plataforma escalable con alta disponibilidad, seguridad, y una experiencia de usuario fluida, es fundamental desarrollar un cronograma detallado que divida el proceso en fases claras. El proyecto será desarrollado en un marco temporal basado en metodologías ágiles, particularmente Scrum, para permitir ajustes en función del feedback continuo y la evolución de los requisitos.
+
+A continuación, se presenta una estimación de plazos desglosada por fases del proyecto, teniendo en cuenta las etapas clave de desarrollo, pruebas, implementación y lanzamiento. Cada sprint tendrá una duración de **2 semanas**, con iteraciones que permiten flexibilidad.
+
+=== Fase 1: **Planificación y Requisitos** (3-4 semanas)
+- **Objetivos**:
+    - Reunir todos los requisitos funcionales y no funcionales del proyecto.
+    - Definir el alcance completo del proyecto, incluyendo las funcionalidades principales (carrito de compras, catálogo de productos, sistemas de pagos, etc.).
+    - Establecer el diseño de alto nivel de la arquitectura y la infraestructura en la nube.
+- **Entregables**:
+    - Documento de especificaciones de requisitos.
+    - Planificación del proyecto y cronograma detallado.
+    - Mockups iniciales de la interfaz de usuario.
+- **Duración estimada**: 3 a 4 semanas.
+
+=== Fase 2: **Diseño de Arquitectura y Base de Datos** (4 semanas)
+- **Objetivos**:
+    - Definir la arquitectura técnica detallada, incluyendo la selección de tecnologías backend, frontend, y la infraestructura en la nube.
+    - Diseñar la estructura de la base de datos, asegurando que sea escalable y adecuada para el volumen de transacciones esperado.
+- **Entregables**:
+    - Diagrama de la arquitectura de la plataforma.
+    - Diseño detallado de la base de datos.
+    - Definición de microservicios y endpoints REST.
+- **Duración estimada**: 4 semanas.
+
+=== Fase 3: **Desarrollo del Backend** (10-12 semanas)
+- **Objetivos**:
+    - Implementar la lógica de negocio y los microservicios que gestionan las transacciones, usuarios, pagos, y la comunicación con los servicios externos.
+    - Asegurar la integración con pasarelas de pago, sistemas de inventario, y autenticación de usuarios.
+    - Crear los endpoints REST y garantizar la seguridad de los datos.
+- **Entregables**:
+    - APIs REST completamente funcionales para la gestión de usuarios, productos, pagos y pedidos.
+    - Sistema de autenticación y autorización (OAuth, JWT).
+    - Integración con pasarelas de pago y servicios externos.
+- **Duración estimada**: 10 a 12 semanas.
+
+=== Fase 4: **Desarrollo del Frontend** (8-10 semanas, en paralelo con Backend)
+- **Objetivos**:
+    - Implementar la interfaz de usuario utilizando React.js (con Next.js) o la tecnología seleccionada, asegurando una experiencia rápida y fluida.
+    - Integrar la interfaz con los endpoints del backend, permitiendo a los usuarios navegar por el catálogo, realizar compras, y gestionar su cuenta.
+    - Implementar características como carrito de compras, búsqueda de productos, y gestión de usuarios.
+- **Entregables**:
+    - Prototipo del frontend con todas las funcionalidades principales.
+    - Interfaz optimizada para dispositivos móviles, tabletas y consolas.
+    - Pruebas de integración con el backend y simulación de cargas para garantizar el rendimiento.
+- **Duración estimada**: 8 a 10 semanas (en paralelo con el backend).
+
+=== Fase 5: **Pruebas y Control de Calidad** (6 semanas)
+- **Objetivos**:
+    - Realizar pruebas unitarias, de integración y pruebas de carga para asegurar que el sistema funcione correctamente bajo escenarios de alto tráfico.
+    - Ejecutar pruebas de seguridad, asegurando que la plataforma esté protegida contra vulnerabilidades comunes (XSS, CSRF, inyecciones SQL, etc.).
+    - Llevar a cabo pruebas de usabilidad para garantizar que la experiencia de usuario sea fluida y satisfactoria.
+- **Entregables**:
+    - Reporte de pruebas de carga y rendimiento.
+    - Pruebas de seguridad aprobadas.
+    - Feedback de pruebas de usabilidad con mejoras implementadas.
+- **Duración estimada**: 6 semanas.
+
+=== Fase 6: **Despliegue y Lanzamiento Inicial** (4 semanas)
+- **Objetivos**:
+    - Desplegar la plataforma en un entorno de producción, asegurando la disponibilidad, escalabilidad y redundancia.
+    - Monitorear el desempeño inicial para resolver cualquier problema crítico que pueda surgir durante el uso en tiempo real.
+    - Ejecutar un lanzamiento controlado para un grupo limitado de usuarios antes del despliegue completo (fase beta).
+- **Entregables**:
+    - Plataforma en producción con monitoreo activo.
+    - Informe de rendimiento post-lanzamiento.
+    - Ajustes finales tras el feedback inicial.
+- **Duración estimada**: 4 semanas.
+
+=== Cronograma General
+
+[options="header,footer"]
+|=====================================================================
+| Fase                                  | Duración Estimada     
+| Planificación y Requisitos            | 3 - 4 semanas             
+| Diseño de Arquitectura y Base de Datos| 4 semanas                 
+| Desarrollo del Backend                | 10 - 12 semanas           
+| Desarrollo del Frontend               | 8 - 10 semanas (paralelo) 
+| Pruebas y Control de Calidad          | 6 semanas                 
+| Despliegue y Lanzamiento Inicial      | 4 semanas                 
+| Total                                 | 35 - 40 semanas       
+|=====================================================================

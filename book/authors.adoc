@@ -1,0 +1,6 @@
+[preface]
+[role="authors"]
+
+== Autora
+
+Diana Paola Narváez Martínez, estudiante de Ingeniería en Sistemas Computacionales en la Universidad Autónoma de Aguascalientes en México, actualmente estudiante internacional en la Universidad Viña del Mar en Chile.

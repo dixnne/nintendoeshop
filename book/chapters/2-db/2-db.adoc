@@ -1,0 +1,186 @@
+== Diseño de Base de Datos
+
+El diseño de la base de datos para la Nintendo eShop debe ser capaz de manejar un gran volumen de transacciones, usuarios, productos y suscripciones. Se presenta una propuesta de modelo relacional que cubre las necesidades clave de la plataforma.
+
+=== Requisitos de la Base de Datos
+1. **Escalabilidad y rendimiento**: Dado que se estima un volumen de hasta 10 millones de transacciones diarias, es crucial que el diseño soporte un crecimiento continuo y consultas eficientes.
+2. **Consistencia y seguridad**: Las transacciones financieras deben garantizar la integridad y consistencia de los datos para evitar duplicaciones o errores.
+3. **Soporte para múltiples tipos de productos y servicios**: Juegos, DLCs, suscripciones, y productos relacionados.
+4. **Optimización de búsquedas**: Búsquedas rápidas y filtros sobre el catálogo de productos (por género, precio, disponibilidad, etc.).
+5. **Historial de transacciones y usuarios**: Almacenamiento del historial de compras, suscripciones, y detalles de los usuarios.
+
+=== Esquema Relacional Propuesto
+
+==== Tablas Principales
+El diseño principal de la base de datos se basa en una arquitectura relacional con las siguientes entidades clave:
+
+1. **Tabla `Users`** (Usuarios)
+   - Esta tabla almacena la información de los usuarios registrados en la plataforma.
+   - **Campos**:
+     - `user_id` (PK, int, auto-increment): Identificador único del usuario.
+     - `username` (varchar, único): Nombre de usuario.
+     - `email` (varchar, único): Dirección de correo electrónico.
+     - `password` (varchar): Hash de la contraseña del usuario.
+     - `subscription_status` (enum: 'active', 'inactive', 'expired'): Estado de la suscripción.
+     - `created_at` (timestamp): Fecha de creación del perfil.
+     - `last_login` (timestamp): Último inicio de sesión.
+     - `country` (varchar): País del usuario, importante para localizar servicios y precios regionales.
+
+2. **Tabla `Products`** (Productos)
+   - Almacena todos los juegos, DLCs y demás productos que la Nintendo eShop tiene disponibles.
+   - **Campos**:
+     - `product_id` (PK, int, auto-increment): Identificador único del producto.
+     - `title` (varchar): Nombre del juego o producto.
+     - `description` (text): Descripción del producto.
+     - `price` (decimal): Precio del producto.
+     - `category_id` (FK, int): Categoría a la que pertenece el producto.
+     - `release_date` (date): Fecha de lanzamiento del juego.
+     - `stock` (int): Cantidad disponible (si aplica, en el caso de productos digitales generalmente ilimitado).
+     - `rating` (decimal): Clasificación promedio de los usuarios.
+
+3. **Tabla `Categories`** (Categorías)
+   - Almacena las categorías de productos (como géneros de juegos, tipos de productos, etc.).
+   - **Campos**:
+     - `category_id` (PK, int, auto-increment): Identificador único de la categoría.
+     - `name` (varchar): Nombre de la categoría (ej. "Aventura", "Acción", "RPG").
+     - `description` (text): Descripción de la categoría.
+
+4. **Tabla `Transactions`** (Transacciones)
+   - Almacena todas las transacciones realizadas por los usuarios.
+   - **Campos**:
+     - `transaction_id` (PK, int, auto-increment): Identificador único de la transacción.
+     - `user_id` (FK, int): Referencia al usuario que realizó la compra.
+     - `total_amount` (decimal): Monto total de la transacción.
+     - `payment_method` (varchar): Método de pago utilizado.
+     - `status` (enum: 'pending', 'completed', 'failed'): Estado de la transacción.
+     - `transaction_date` (timestamp): Fecha y hora de la transacción.
+
+5. **Tabla `Transaction_Details`** (Detalles de la Transacción)
+   - Detalla los productos adquiridos en cada transacción.
+   - **Campos**:
+     - `transaction_detail_id` (PK, int, auto-increment): Identificador único del detalle de transacción.
+     - `transaction_id` (FK, int): Identificador de la transacción principal.
+     - `product_id` (FK, int): Producto adquirido.
+     - `quantity` (int): Cantidad de productos adquiridos (para productos físicos o suscripciones).
+
+6. **Tabla `Subscriptions`** (Suscripciones)
+   - Almacena la información sobre las suscripciones de los usuarios al servicio online.
+   - **Campos**:
+     - `subscription_id` (PK, int, auto-increment): Identificador único de la suscripción.
+     - `user_id` (FK, int): Identificador del usuario.
+     - `subscription_type` (varchar): Tipo de suscripción (por ejemplo, "mensual", "anual").
+     - `start_date` (date): Fecha de inicio de la suscripción.
+     - `end_date` (date): Fecha de finalización de la suscripción.
+     - `status` (enum: 'active', 'expired', 'cancelled'): Estado de la suscripción.
+
+7. **Tabla `Reviews`** (Reseñas de Productos)
+   - Permite a los usuarios dejar opiniones y calificaciones de los productos que han comprado.
+   - **Campos**:
+     - `review_id` (PK, int, auto-increment): Identificador único de la reseña.
+     - `user_id` (FK, int): Referencia al usuario que realizó la reseña.
+     - `product_id` (FK, int): Referencia al producto reseñado.
+     - `rating` (int): Puntuación otorgada al producto (por ejemplo, entre 1 y 5 estrellas).
+     - `review` (text): Texto de la reseña.
+     - `created_at` (timestamp): Fecha en que se dejó la reseña.
+
+==== Diagrama de Base de Datos
+
+.DBML
+[dbml]
+----
+Project Nintendo_eShop {
+  database_type: "PostgreSQL"
+}
+
+// Tablas
+
+Table Users {
+  user_id int [pk, increment] // Identificador único del usuario
+  username varchar [unique] // Nombre de usuario
+  email varchar [unique] // Dirección de correo electrónico
+  password varchar // Hash de la contraseña del usuario
+  subscription_status enum('active', 'inactive', 'expired') // Estado de la suscripción
+  created_at timestamp // Fecha de creación del perfil
+  last_login timestamp // Último inicio de sesión
+  country varchar // País del usuario
+}
+
+Table Products {
+  product_id int [pk, increment] // Identificador único del producto
+  title varchar // Nombre del juego o producto
+  description text // Descripción del producto
+  price decimal // Precio del producto
+  category_id int  // Categoría a la que pertenece el producto
+  release_date date // Fecha de lanzamiento del juego
+  stock int // Cantidad disponible
+  rating decimal // Clasificación promedio de los usuarios
+}
+
+Table Categories {
+  category_id int [pk, increment] // Identificador único de la categoría
+  name varchar [unique] // Nombre de la categoría
+  description text // Descripción de la categoría
+}
+
+Table Transactions {
+  transaction_id int [pk, increment] // Identificador único de la transacción
+  user_id int  // Referencia al usuario que realizó la compra
+  total_amount decimal // Monto total de la transacción
+  payment_method varchar // Método de pago utilizado
+  status enum('pending', 'completed', 'failed') // Estado de la transacción
+  transaction_date timestamp // Fecha y hora de la transacción
+}
+
+Table Transaction_Details {
+  transaction_detail_id int [pk, increment] // Identificador único del detalle de transacción
+  transaction_id int  // Identificador de la transacción principal
+  product_id int  // Producto adquirido
+  quantity int // Cantidad de productos adquiridos
+}
+
+Table Subscriptions {
+  subscription_id int [pk, increment] // Identificador único de la suscripción
+  user_id int  // Identificador del usuario
+  subscription_type varchar // Tipo de suscripción
+  start_date date // Fecha de inicio de la suscripción
+  end_date date // Fecha de finalización de la suscripción
+  status enum('active', 'expired', 'cancelled') // Estado de la suscripción
+}
+
+Table Reviews {
+  review_id int [pk, increment] // Identificador único de la reseña
+  user_id int  // Referencia al usuario que realizó la reseña
+  product_id int  // Referencia al producto reseñado
+  rating int // Puntuación otorgada al producto
+  review text // Texto de la reseña
+  created_at timestamp // Fecha en que se dejó la reseña
+}
+
+// Relaciones
+
+Ref: Users.user_id > Transactions.user_id
+Ref: Products.product_id > Transaction_Details.product_id
+Ref: Transactions.transaction_id > Transaction_Details.transaction_id
+Ref: Users.user_id > Subscriptions.user_id
+Ref: Products.category_id > Categories.category_id
+Ref: Users.user_id > Reviews.user_id
+Ref: Products.product_id > Reviews.product_id
+----
+
+=== Optimización y Escalabilidad
+
+1. **Particionamiento**: Para mejorar el rendimiento, es recomendable particionar las tablas de transacciones y usuarios por regiones geográficas o por rango temporal. Esto permitirá distribuir la carga de trabajo y reducir la latencia.
+  
+2. **Caché**: Implementar un sistema de caché (con Redis o Memcached) para almacenar temporalmente consultas frecuentes, como búsquedas de productos populares o perfiles de usuarios, reduciendo la carga en la base de datos principal.
+  
+3. **Replicación de Base de Datos**: Utilizar bases de datos replicadas para manejar las consultas de lectura en regiones geográficamente distribuidas, mejorando la disponibilidad y reduciendo los tiempos de respuesta.
+  
+4. **Índices**: Añadir índices a los campos que serán utilizados frecuentemente en las búsquedas, como `user_id`, `product_id`, `transaction_date`, y `category_id`. Esto optimizará las consultas sobre las tablas.
+
+=== Elección de Sistema de Base de Datos
+
+Para una plataforma de la magnitud de la Nintendo eShop, un sistema de base de datos relacional robusto y escalable es esencial. Las siguientes opciones se consideran ideales:
+
+- **PostgreSQL**: Ofrece características avanzadas como particionamiento nativo y soporte para JSON, lo que puede ser útil si es necesario almacenar datos semiestructurados. PostgreSQL es también altamente escalable y tiene una gran comunidad de soporte.
+- **MySQL**: Es una opción ampliamente utilizada en Ecommerce, conocida por su velocidad en lecturas y su robustez. Con la configuración adecuada, MySQL puede manejar grandes volúmenes de datos.
+- **Base de datos distribuida (Cassandra, CockroachDB)**: Si la necesidad de escalabilidad es extrema, una base de datos distribuida como Cassandra o CockroachDB puede manejar grandes volúmenes de datos replicados globalmente, pero requiere un mayor esfuerzo de mantenimiento y configuración.
